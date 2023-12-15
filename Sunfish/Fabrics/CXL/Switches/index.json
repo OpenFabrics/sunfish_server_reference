@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches",
+    "@odata.type": "#Fabrics/CXL/SwitchesCollection.Fabrics/CXL/SwitchesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Fabrics/CXL/Switches Collection"
+}

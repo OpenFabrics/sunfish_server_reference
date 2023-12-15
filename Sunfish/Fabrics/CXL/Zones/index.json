@@ -1,0 +1,17 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Zones",
+    "@odata.type": "#Fabrics/CXL/ZonesCollection.Fabrics/CXL/ZonesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Zones/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Zones/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Zones/3"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "Fabrics/CXL/Zones Collection"
+}

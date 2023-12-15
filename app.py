@@ -2,19 +2,20 @@
 # This software is available to you under a BSD 3-Clause License. 
 # The full license terms are available here: https://github.com/OpenFabrics/sunfish_server_reference/blob/main/LICENSE
 
+import json
+import os
 from flask import Flask, request
-from sunfishcorelib.core import Core
-from sunfishcorelib.exceptions import *
+from sunfishcorelib.sunfishcorelib.core import Core
+from sunfishcorelib.sunfishcorelib.exceptions import *
 
-conf = {
-    "storage_backend": "FS",
-	"redfish_root": "/redfish/v1/",
-	"backend_conf" : {
-		"fs_root": "Resources"
-	}
-}
 
 # initialize flask
+path = os.path.join(os.getcwd(), 'conf.json')
+try:
+	json_data = open(path)
+	conf = json.load(json_data)
+except FileNotFoundError as e:
+	raise ResourceNotFound('conf.json')
 
 app = Flask(__name__)
 sunfish_core = Core(conf)
@@ -24,7 +25,7 @@ sunfish_core = Core(conf)
 def get(resource):
 
 	try:
-		resp = sunfish_core.get_object(resource)
+		resp = sunfish_core.get_object('/'+resource)
 		return resp, 200
 	except ResourceNotFound as e:
 		return e.message, 404
@@ -32,12 +33,24 @@ def get(resource):
 @app.route('/<path:resource>', methods=["POST"])
 def post(resource):
 	try :
-		resp = sunfish_core.create_object(request.json)
-		return resp
+		resp = ''
+		if "Events" in request.json:
+			resp = sunfish_core.handle_event(request.json)
+		else:
+			resp = sunfish_core.create_object(request.path, request.json)
+		return resp, 200
 	except CollectionNotSupported as e:
 		return e.message, 405 # method not allowed
 	except AlreadyExists as e:
 		return e.message, 409 # Conflict
+	except ActionNotAllowed as e:
+		return e.message, 404
+	except IllegalSubscription as e: 
+		return e.message, 400
+	except DestinationError as e:
+		return e.message, 404
+	except ResourceNotFound as e:
+		return e.message, 404
 
 @app.route('/<path:resource>', methods=["PUT"])
 def put(resource):
@@ -60,7 +73,7 @@ def patch(resource):
 @app.route('/<path:resource>', methods=["DELETE"])
 def delete(resource):
 	try:
-		resp = sunfish_core.delete_object(resource)
+		resp = sunfish_core.delete_object('/'+resource)
 		return resp, 200
 	except ResourceNotFound as e:
 		return e.message, 404

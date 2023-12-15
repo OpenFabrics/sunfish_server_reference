@@ -1,0 +1,29 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints",
+    "@odata.type": "#Fabrics/CXL/EndpointsCollection.Fabrics/CXL/EndpointsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T3"
+        }
+    ],
+    "Members@odata.count": 7,
+    "Name": "Fabrics/CXL/Endpoints Collection"
+}

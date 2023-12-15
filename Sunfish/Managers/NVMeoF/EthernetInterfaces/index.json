@@ -1,0 +1,13 @@
+{
+    "@odata.id": "/redfish/v1/Managers/NVMeoF/EthernetInterfaces",
+    "@odata.type": "#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "Description": "Collection of EthernetInterfaces for this Manager",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/NVMeoF/EthernetInterfaces/Dedicated"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Ethernet Network Interface Collection",
+    "Oem": {}
+}

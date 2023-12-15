@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/CXL1/Processors",
+    "@odata.type": "#Chassis/CXL1/ProcessorsCollection.Chassis/CXL1/ProcessorsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL1/Processors/FPGA"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/CXL1/Processors Collection"
+}

@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PCXL2/Processors",
+    "@odata.type": "#Chassis/PCXL2/ProcessorsCollection.Chassis/PCXL2/ProcessorsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PCXL2/Processors/GPU"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PCXL2/Processors Collection"
+}

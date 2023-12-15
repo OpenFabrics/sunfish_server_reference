@@ -1,0 +1,18 @@
+{
+    "@odata.type": "#EventDestination.EventDestination",
+    "Destination": "http://localhost:8080",
+    "EventFormatType": "Event",
+    "RegistryPrefixes": [
+        "TaskEvent"
+    ]
+    ,
+    "ExcludeRegistryPrefixes": [
+        "Basic"
+    ],
+    "ExcludeMessageIds": [
+        "TaskEvent.1.0.TaskCancelled"
+    ],
+    "ResourceTypes": [
+        "ComputerSystem"
+    ]
+}

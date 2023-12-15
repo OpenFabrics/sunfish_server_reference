@@ -1,0 +1,56 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/PCXL1/FabricAdapters/1/Ports/1",
+    "@odata.type": "#Port.v1_7_0.Port",
+    "ActiveWidth": 4,
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 256,
+    "Description": "CXL Port 1 in Fabric Adapter",
+    "Id": "1",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "AssociatedEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T1"
+            }
+        ],
+        "ConnectedSwitchPorts": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL/Ports/D1"
+            }
+        ],
+        "ConnectedSwitches": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 128,
+    "Name": "CXL Port 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "PortId": "4C-1D-96-FF-FE-DD-D8-D1",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "UpstreamPort",
+    "RemotePortId": "D1",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 8
+}

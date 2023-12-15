@@ -1,0 +1,19 @@
+{
+    "@odata.type": "#Event.v1_7_0.Event",
+    "Name": "Task Event",
+    "Context": "ContosoWebClient",
+    "Events": [
+        {
+            "EventId": "1234",
+            "Severity": "Warning",
+            "Message": "Work on the task with Id 1234 has been halted prior to completion due to an explicit request.",
+            "MessageId": "TaskEvent.1.0.TaskCancelled",
+            "MessageArgs": [
+                "1234"
+            ],
+            "OriginOfCondition": {
+                "@odata.id": "/redfish/v1/Systems/1"
+            }
+        }
+    ]
+}
