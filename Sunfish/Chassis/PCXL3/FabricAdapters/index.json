@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PCXL3/FabricAdapters",
+    "@odata.type": "#Chassis/PCXL3/FabricAdaptersCollection.Chassis/PCXL3/FabricAdaptersCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PCXL3/FabricAdapters/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PCXL3/FabricAdapters Collection"
+}

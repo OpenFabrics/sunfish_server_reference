@@ -1,0 +1,45 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/CXL1/Processors/FPGA",
+    "@odata.type": "#Processor.v1_15_0.Processor",
+    "Description": "FPGA with cache",
+    "Id": "FPGA",
+    "Links": {
+        "ConnectedProcessors": [
+            {
+                "@odata.id": "/redfish/v1/Systems/CXL-System/Processors/CPU"
+            }
+        ],
+        "PCIeFunctions": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL1/PCIeDevices/1/PCIeFunctions/1"
+            }
+        ]
+    },
+    "MemorySummary": {
+        "TotalCacheSizeMiB": 64,
+        "TotalMemorySizeMiB": 0
+    },
+    "Name": "FPGA with cache",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "ProcessorMemory": [
+        {
+            "CapacityMiB": 64,
+            "IntegratedMemory": true,
+            "MemoryType": "Cache"
+        }
+    ],
+    "ProcessorType": "FPGA",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

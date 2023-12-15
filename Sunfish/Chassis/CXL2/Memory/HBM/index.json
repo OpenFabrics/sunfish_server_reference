@@ -1,0 +1,34 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/CXL2/Memory/HBM",
+    "@odata.type": "#Memory.v1_15_0.Memory",
+    "CapacityMiB": 16384,
+    "Id": "HBM",
+    "Links": {
+        "Processors": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL2/Processors/GPU"
+            }
+        ]
+    },
+    "MemoryDeviceType": "HBM2",
+    "MemoryMedia": [
+        "DRAM"
+    ],
+    "MemoryType": "DRAM",
+    "Name": "HBM memory",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "OperatingSpeedMhz": 1333,
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

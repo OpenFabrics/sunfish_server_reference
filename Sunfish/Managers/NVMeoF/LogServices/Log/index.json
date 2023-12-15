@@ -1,0 +1,25 @@
+{
+    "@odata.id": "/redfish/v1/Managers/NVMeoF/LogServices/Log",
+    "@odata.type": "#LogService.v1_3_1.LogService",
+    "Actions": {
+        "#LogService.ClearLog": {
+            "target": "/redfish/v1/Managers/NVMeoF/LogServices/Log/Actions/LogService.ClearLog"
+        },
+        "Oem": {}
+    },
+    "DateTime": "2015-03-13T04:14:33+06:00",
+    "DateTimeLocalOffset": "+06:00",
+    "Entries": {
+        "@odata.id": "/redfish/v1/Managers/NVMeoF/LogServices/Log/Entries"
+    },
+    "Id": "Log",
+    "MaxNumberOfRecords": 1000,
+    "Name": "System Log Service",
+    "Oem": {},
+    "OverWritePolicy": "WrapsWhenFull",
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

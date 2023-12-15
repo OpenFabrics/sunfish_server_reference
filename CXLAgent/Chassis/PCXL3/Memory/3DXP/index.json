@@ -1,0 +1,19 @@
+{
+    "@odata.type": "#Memory.v1_15_0.Memory",
+    "Id": "3DXP",
+    "Name": "3DXP memory",
+    "MemoryType": "IntelOptane",
+    "MemoryMedia": [
+        "Intel3DXPoint"
+    ],
+    "CapacityMiB": 16384,
+    "OperatingSpeedMhz": 1333,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled",
+        "HealthRollup": "OK"
+    },
+    "Oem": {},
+    "@odata.id": "/redfish/v1/Chassis/PCXL3/Memory/3DXP",
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright."
+}

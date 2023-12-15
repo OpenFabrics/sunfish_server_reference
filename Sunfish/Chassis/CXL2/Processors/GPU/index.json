@@ -1,0 +1,56 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/CXL2/Processors/GPU",
+    "@odata.type": "#Processor.v1_15_0.Processor",
+    "Description": "GPU with cache and HBM memory",
+    "Id": "GPU",
+    "Links": {
+        "ConnectedProcessors": [
+            {
+                "@odata.id": "/redfish/v1/Systems/CXL-System/Processors/CPU"
+            }
+        ],
+        "Memory": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL2/Memory/HBM"
+            }
+        ],
+        "PCIeFunctions": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL2/PCIeDevices/1/PCIeFunctions/1"
+            }
+        ]
+    },
+    "MemorySummary": {
+        "TotalCacheSizeMiB": 64,
+        "TotalMemorySizeMiB": 16384
+    },
+    "Name": "GPU with HBM memory",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "ProcessorMemory": [
+        {
+            "CapacityMiB": 16384,
+            "IntegratedMemory": false,
+            "MemoryType": "HBM2",
+            "SpeedMHz": 1033
+        },
+        {
+            "CapacityMiB": 64,
+            "IntegratedMemory": true,
+            "MemoryType": "Cache"
+        }
+    ],
+    "ProcessorType": "GPU",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

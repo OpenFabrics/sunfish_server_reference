@@ -1,0 +1,34 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Zones/2",
+    "@odata.type": "#Zone.v1_6_1.Zone",
+    "Description": "CXL Zone 2",
+    "Id": "2",
+    "Links": {
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/1"
+            }
+        ]
+    },
+    "Name": "CXL Zone 2",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "ZoneType": "ZoneOfEndpoints"
+}

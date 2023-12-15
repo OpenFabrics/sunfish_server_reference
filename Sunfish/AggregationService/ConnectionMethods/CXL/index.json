@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/CXL",
+    "@odata.type": "#ConnectionMethod.v1_1_0.ConnectionMethod",
+    "ConnectionMethodType": "Redfish",
+    "ConnectionMethodVariant": "Contoso",
+    "Id": "NVMeoF",
+    "Links": {
+        "AggregationSources": []
+    },
+    "Name": "ConnectionMethod for Agent CXL"
+}

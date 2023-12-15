@@ -1,0 +1,6 @@
+{
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/8c9c3297-f7ec-45b7-88fb-9cea318cb4a0",
+    "Context": "context",
+    "Destination": "www.destinationCambiata.com",
+    "Id": "8c9c3297-f7ec-45b7-88fb-9cea318cb4a0"
+}

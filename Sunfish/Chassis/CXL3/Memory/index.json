@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/CXL3/Memory",
+    "@odata.type": "#Chassis/CXL3/MemoryCollection.Chassis/CXL3/MemoryCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL3/Memory/3DXP"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/CXL3/Memory Collection"
+}

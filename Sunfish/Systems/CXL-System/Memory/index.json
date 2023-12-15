@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1/Systems/CXL-System/Memory",
+    "@odata.type": "#Systems/CXL-System/MemoryCollection.Systems/CXL-System/MemoryCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System/Memory/CXL2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System/Memory/CXL3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System/Memory/RCXL2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System/Memory/RCXL3"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Systems/CXL-System/Memory Collection"
+}

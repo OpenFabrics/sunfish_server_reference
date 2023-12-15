@@ -1,0 +1,62 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Systems/CXL-System/Processors/CPU/Ports/1",
+    "@odata.type": "#Port.v1_7_0.Port",
+    "ActiveWidth": 16,
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 512,
+    "Description": "CXL Port in CPU connected to CXL switch",
+    "Id": "1",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "AssociatedEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I3"
+            }
+        ],
+        "ConnectedSwitchPorts": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL/Ports/U1"
+            }
+        ],
+        "ConnectedSwitches": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 512,
+    "Name": "CXL Port 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "PortId": "1",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "DownstreamPort",
+    "RemotePortId": "4C-1D-96-FF-FE-DD-D8-D0",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 16
+}

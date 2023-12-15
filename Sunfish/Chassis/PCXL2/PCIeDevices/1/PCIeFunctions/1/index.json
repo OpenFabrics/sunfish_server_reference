@@ -1,0 +1,44 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/PCXL2/PCIeDevices/1/PCIeFunctions/1",
+    "@odata.type": "#PCIeFunction.v1_4_0.PCIeFunction",
+    "ClassCode": "0x120000",
+    "Description": "PCIe Function with CXL extensions representing GPU",
+    "DeviceClass": "ProcessingAccelerators",
+    "DeviceId": "0xABCD",
+    "FunctionId": 1,
+    "FunctionProtocol": "CXL",
+    "FunctionType": "Physical",
+    "Id": "1",
+    "Links": {
+        "CXLLogicalDevice": {
+            "@odata.id": "/redfish/v1/Chassis/PCXL2/PCIeDevices/1/CXLLogicalDevices/1"
+        },
+        "PCIeDevice": {
+            "@odata.id": "/redfish/v1/Chassis/PCXL2/PCIeDevices/1"
+        },
+        "Processors": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PCXL2/Processors/GPU"
+            }
+        ]
+    },
+    "Name": "CXL Function",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "RevisionId": "0x00",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "SubsystemId": "0xABCD",
+    "SubsystemVendorId": "0xABCD",
+    "VendorId": "0xABCD"
+}

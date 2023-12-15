@@ -1,0 +1,63 @@
+{
+    "@Redfish.Copyright": "Copyright 2NVMeoF14-2NVMeoF21 SNIA. All rights reserved.",
+    "@odata.id": "/redfish/v1/Managers/NVMeoF",
+    "@odata.type": "#Manager.v1_15_0.Manager",
+    "Actions": {
+        "#Manager.Reset": {
+            "ResetType@Redfish.AllowableValues": [
+                "ForceOff",
+                "PowerCycle",
+                "On"
+            ],
+            "target": "/redfish/v1/Managers/NVMeoF/Actions/Manager.Reset"
+        },
+        "Oem": {}
+    },
+    "CommandShell": {
+        "ConnectTypesSupported": [
+            "Telnet",
+            "SSH"
+        ],
+        "MaxConcurrentSessions": 4,
+        "ServiceEnabled": true
+    },
+    "DateTime": "2021-03-13T04:14:33+06:00",
+    "DateTimeLocalOffset": "+06:00",
+    "Description": "Contoso NVMeoF",
+    "EthernetInterfaces": {
+        "@odata.id": "/redfish/v1/Managers/NVMeoF/EthernetInterfaces"
+    },
+    "FirmwareVersion": "1.00",
+    "Id": "NVMeoF",
+    "Links": {
+        "ManagerForChassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/EBOFEnclosure"
+            }
+        ],
+        "ManagerInChassis": {
+            "@odata.id": "/redfish/v1/Chassis/EBOFEnclosure"
+        },
+        "Oem": {}
+    },
+    "LocationIndicatorActive": false,
+    "LogServices": {
+        "@odata.id": "/redfish/v1/Managers/NVMeoF/LogServices"
+    },
+    "ManagerType": "EnclosureManager",
+    "Manufacturer": "Box Manufacturer",
+    "Model": "Joo Janta 200",
+    "Name": "NVMeoF Manager",
+    "NetworkProtocol": {
+        "@odata.id": "/redfish/v1/Managers/NVMeoF/NetworkProtocol"
+    },
+    "Oem": {},
+    "PowerState": "On",
+    "SerialNumber": "AX1823-045",
+    "ServiceEntryPointUUID": "92384634-2938-2342-8820-489239905423",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "UUID": "58893887-8974-2487-2389-841168418919"
+}

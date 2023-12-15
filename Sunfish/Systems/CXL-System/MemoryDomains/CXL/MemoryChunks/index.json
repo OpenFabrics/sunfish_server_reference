@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Systems/CXL-System/MemoryDomains/CXL/MemoryChunks",
+    "@odata.type": "#Systems/CXL-System/MemoryDomains/CXL/MemoryChunksCollection.Systems/CXL-System/MemoryDomains/CXL/MemoryChunksCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System/MemoryDomains/CXL/MemoryChunks/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Systems/CXL-System/MemoryDomains/CXL/MemoryChunks Collection"
+}
