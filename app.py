@@ -5,8 +5,12 @@
 import json
 import os
 from flask import Flask, request
-from sunfishcorelib.sunfishcorelib.core import Core
-from sunfishcorelib.sunfishcorelib.exceptions import *
+from sunfish.lib.core import Core
+from sunfish.lib.exceptions import *
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
 
 
 # initialize flask
@@ -20,7 +24,6 @@ except FileNotFoundError as e:
 app = Flask(__name__)
 sunfish_core = Core(conf)
 
-# Usa codici http
 @app.route('/<path:resource>', methods=["GET"])
 def get(resource):
 
@@ -34,8 +37,8 @@ def get(resource):
 def post(resource):
 	try :
 		resp = ''
-		if "Events" in request.json:
-			resp = sunfish_core.handle_event(request.json)
+		if request.path == "/EventService":
+			sunfish_core.handle_event(request.json)
 		else:
 			resp = sunfish_core.create_object(request.path, request.json)
 		return resp, 200
@@ -64,8 +67,7 @@ def put(resource):
 @app.route('/<path:resource>', methods=["PATCH"])
 def patch(resource):
 	try:
-		data = request.json
-		resp = sunfish_core.patch_object(data)
+		resp = sunfish_core.patch_object(request.path,request.json)
 		return resp, 200
 	except ResourceNotFound as e:
 		return e.message, 404
@@ -83,4 +85,4 @@ def delete(resource):
 		return e.message, 400
 
 # we run app debugging mode
-app.run(debug=False)
+app.run(debug=True)
