@@ -1,0 +1,18 @@
+{
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/SunfishServer",
+    "@odata.type": "#EventDestination.EventDestination",
+    "Context": "",
+    "Destination": "http://localhost:5000/EventService",
+    "EventFormatType": "Event",
+    "Id": "SunfishServer",
+    "OriginResources": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics"
+        }
+    ],
+    "Protocol": "Redfish",
+    "RegistryPrefixes": [
+        "Basic"
+    ],
+    "SubordinateResources": "True"
+}
