@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PCXL3/PCIeDevices",
+    "@odata.type": "#Chassis/PCXL3/PCIeDevicesCollection.Chassis/PCXL3/PCIeDevicesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PCXL3/PCIeDevices/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PCXL3/PCIeDevices Collection"
+}

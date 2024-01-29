@@ -1,6 +1,6 @@
 {
     "@odata.id": "/redfish/v1/Systems/1",
-    "@odata.type": "#ComputerSystem.1.00.0.ComputerSystem",
+    "@odata.type": "#ComputerSystem.1.0.0.ComputerSystem",
     "Id": "1",
     "Name": "Compute Node 1",
     "SystemType": "Physical",

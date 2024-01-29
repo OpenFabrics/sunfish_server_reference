@@ -1,0 +1,9 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 SNIA. All rights reserved.",
+    "@odata.id": "/redfish/v1/AggregationService/AggregationSources",
+    "@odata.type": "#AggregationSourceCollection.AggregationSourceCollection",
+    "Members": [
+    ],
+    "Members@odata.count": 0,
+    "Name": "AggregationSource Collection"
+}

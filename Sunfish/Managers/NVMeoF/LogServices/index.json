@@ -1,0 +1,12 @@
+{
+    "@odata.id": "/redfish/v1/Managers/NVMeoF/LogServices",
+    "@odata.type": "#LogServiceCollection.LogServiceCollection",
+    "Description": "Collection of Log Services for this Manager",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Managers/NVMeoF/LogServices/Log"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Log Service Collection"
+}

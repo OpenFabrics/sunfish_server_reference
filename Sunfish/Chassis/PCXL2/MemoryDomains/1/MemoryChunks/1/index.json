@@ -1,0 +1,37 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/PCXL2/MemoryDomains/1/MemoryChunks/1",
+    "@odata.type": "#MemoryChunks.v1_5_0.MemoryChunks",
+    "AddressRangeOffsetMiB": 1024,
+    "AddressRangeType": "Volatile",
+    "Description": "Memory chunk accessible through CXL",
+    "Id": "1",
+    "Links": {
+        "CXLLogicalDevices": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PCXL2/PCIeDevices/1/CXLLogicalDevices/1"
+            }
+        ],
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+            }
+        ]
+    },
+    "MediaLocation": "Local",
+    "MemoryChunkSizeMiB": 4096,
+    "Name": "Memory Chunk 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "OperationalState": "Online",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

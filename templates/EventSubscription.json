@@ -1,0 +1,23 @@
+{
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/5322c39a-db7f-4e89-b204-ddbc25b0003e",
+    "@odata.type": "#EventDestination.EventDestination",
+    "Destination": "www.destination.com",
+    "EventFormatType": "Event",
+    "RegistryPrefixes": [
+        "ResourceEvent"
+    ],
+    "MessageIds": [
+        "Basic.1.0.SettingsFailed",
+        "ResourceEvent.1.2.ResourceCreated"
+    ],
+    "ExcludeMessageIds": [
+        "Example.1.0.SettingsFailed"
+    ],
+    "Id": "5322c39a-db7f-4e89-b204-ddbc25b0003e",
+    "OriginResources": {
+        "@odata.id": "/redfish/v1/Systems/1/EthernetInterfaces/1"
+    },
+    "IncludeOriginOfCondition": "True",
+    "SubordinateResources": "True"
+}
+

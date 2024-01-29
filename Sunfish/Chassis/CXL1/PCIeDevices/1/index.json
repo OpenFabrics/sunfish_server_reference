@@ -1,0 +1,47 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/CXL1/PCIeDevices/1",
+    "@odata.type": "#PCIeDevice.v1_10_0.PCIeDevice",
+    "CXLDevice": {
+        "CapableProtocolVersion": "V2_0",
+        "CurrentProtocolVersion": "V2_0",
+        "DeviceType": "Type1",
+        "MultiLogicalDevice": false
+    },
+    "CXLLogicalDevices": {
+        "@odata.id": "/redfish/v1/Chassis/CXL1/PCIeDevices/1/CXLLogicalDevices"
+    },
+    "Description": "CXL Physcial Device Type 1",
+    "Id": "1",
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL1"
+            }
+        ],
+        "Oem": {}
+    },
+    "Name": "CXL Device",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "PCIeFunctions": {
+        "@odata.id": "/redfish/v1/Chassis/CXL1/PCIeDevices/1/PCIeFunctions"
+    },
+    "PCIeInterface": {
+        "LanesInUse": 8,
+        "MaxLanes": 16,
+        "MaxPCIeType": "Gen5",
+        "PCIeType": "Gen5"
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

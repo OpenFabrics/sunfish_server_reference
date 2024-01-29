@@ -1,0 +1,32 @@
+{
+    "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
+    "@odata.id": "/redfish/v1/Chassis/CXL1",
+    "@odata.type": "#Chassis.v1_20_0.Chassis",
+    "ChassisType": "Module",
+    "Id": "CXL1",
+    "Links": {
+        "ContainedBy": {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis"
+        }
+    },
+    "Name": "CXL Device Type 1 module",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9ebb7904-5639-478e-9160-5ef0ec49720b"
+            }
+        }
+    },
+    "PCIeDevices": {
+        "@odata.id": "/redfish/v1/Chassis/CXL1/PCIeDevices"
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Chassis/CXL1/Processors"
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

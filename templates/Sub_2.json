@@ -1,0 +1,14 @@
+{
+    "@odata.type": "#EventDestination.EventDestination",
+    "Destination": "http://localhost:8080",
+    "EventFormatType": "Event",
+    "RegistryPrefixes": [
+        "Basic"
+    ],
+    "MessageIds": [
+        "TaskEvent.1.0.TaskCancelled"
+    ],
+    "ExcludeMessageIds": [
+        "BaseEvent.1.0.AccessDenied"
+    ]
+}
