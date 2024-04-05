@@ -21,14 +21,6 @@
         ]
     },
     "Name": "CXL Fabric",
-    "Oem": {
-        "Sunfish_RM": {
-            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
-            "ManagingAgent": {
-                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/0fa4bc06-79a8-4fec-bea5-26dfa7678c29"
-            }
-        }
-    },
     "Status": {
         "Health": "OK",
         "State": "Enabled"
