@@ -3,8 +3,6 @@
   "@odata.id": "/redfish/v1/CompositionService/ResourceBlocks",
   "@odata.type": "#ResourceBlockCollection.ResourceBlockCollection",
   "Name": "Resource Block Collection",
-  "Links": {
-    "Members@odata.count": 20,
-    "Members": []
-  }
+  "Members@odata.count": 20,
+  "Members": []
 }
