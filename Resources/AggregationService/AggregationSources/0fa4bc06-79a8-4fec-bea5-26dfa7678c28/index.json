@@ -1,6 +1,6 @@
 {
     "@Redfish.Copyright": "Copyright 2014-2021 DMTF. For the full DMTF copyright policy, see http://www.dmtf.org/about/policies/copyright.",
-    "@odata.id": "/redfish/v1/AggregationService/AggregationSources/0fa4bc06-79a8-4fec-bea5-26dfa7678c29",
+    "@odata.id": "/redfish/v1/AggregationService/AggregationSources/0fa4bc06-79a8-4fec-bea5-26dfa7678c28",
     "@odata.type": "#AggregationSource.v1_2_.AggregationSource",
     "Connections": {
         "@odata.id": "/redfish/v1/Fabrics/CXL/Connections"
