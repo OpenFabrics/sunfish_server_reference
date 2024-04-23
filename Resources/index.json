@@ -6,5 +6,12 @@
     "RedfishVersion": "1.14.0",
     "Systems": {
         "@odata.id": "/redfish/v1/Systems"
+    },
+    "CompositionService": {
+        "@odata.id": "/redfish/v1/CompositionService"
+    },
+    "AggregationServiceService": {
+        "@odata.id": "/redfish/v1/AggregationService"
+
     }
 }
