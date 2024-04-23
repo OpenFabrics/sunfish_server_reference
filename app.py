@@ -13,6 +13,7 @@ FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
 logging.basicConfig(format=FORMAT, level=logging.DEBUG)
 
 logger = logging.getLogger("Server")
+
 conf = {
     "storage_backend": "FS",
 	"redfish_root": "/redfish/v1/",
@@ -23,6 +24,7 @@ conf = {
 	"handlers": {
 		"subscription_handler": "redfish",
 		"event_handler": "redfish"
+
 	}
 }
 
@@ -42,6 +44,7 @@ def get(resource):
 	logger.debug(f"GET on: {request.path}")
 	try:
 		resp = sunfish_core.get_object(request.path)
+
 		return resp, 200
 	except ResourceNotFound as e:
 		return e.message, 404
@@ -54,6 +57,7 @@ def post(resource):
 			resp = sunfish_core.handle_event(request.json)
 		else:
 			resp = sunfish_core.create_object(request.path, request.json)
+
 		return resp
 	except CollectionNotSupported as e:
 		return e.message, 405 # method not allowed

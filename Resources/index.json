@@ -12,5 +12,6 @@
     },
     "AggregationServiceService": {
         "@odata.id": "/redfish/v1/AggregationService"
+
     }
 }
