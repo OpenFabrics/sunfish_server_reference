@@ -15,6 +15,11 @@ FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
 logging.basicConfig(format=FORMAT, level=logging.DEBUG)
 
 logger = logging.getLogger("Server")
+
+FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
+logging.basicConfig(format=FORMAT, level=logging.DEBUG)
+
+logger = logging.getLogger("Server")
 conf = {
     "storage_backend" : {
         "module_name": "storage.my_storage_package.my_storage_backend",
@@ -64,6 +69,7 @@ def post(resource):
 			resp = sunfish_core.storage_backend.reset_resources(conf['backend_conf']['fs_root'],conf['backend_conf']['clean_resource_path'])
 		else:
 			resp = sunfish_core.create_object(request.path, request.json)
+
 		return resp
 	except CollectionNotSupported as e:
 		return e.message, 405 # method not allowed
