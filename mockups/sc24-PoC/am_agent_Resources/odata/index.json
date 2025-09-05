@@ -1,0 +1,32 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.context": "/redfish/v1/$metadata",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "value": [
+        {
+            "kind": "Singleton",
+            "name": "Service",
+            "url": "/redfish/v1/"
+        },
+        {
+            "kind": "Singleton",
+            "name": "Systems",
+            "url": "/redfish/v1/Systems"
+        },
+        {
+            "kind": "Singleton",
+            "name": "Chassis",
+            "url": "/redfish/v1/Chassis"
+        },
+        {
+            "kind": "Singleton",
+            "name": "Fabrics",
+            "url": "/redfish/v1/Fabrics"
+        }
+    ]
+}

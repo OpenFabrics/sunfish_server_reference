@@ -1,0 +1,59 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints",
+    "@odata.type": "#Fabrics/CXL/EndpointsCollection.Fabrics/CXL/EndpointsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/Sunfish_bcae_T5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.8"
+        }
+    ],
+    "Members@odata.count": 17,
+    "Name": "Fabrics/CXL/Endpoints Collection"
+}

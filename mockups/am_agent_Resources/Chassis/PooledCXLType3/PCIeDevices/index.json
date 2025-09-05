@@ -1,0 +1,27 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices",
+    "@odata.type": "#PCIeDeviceCollection.PCIeDeviceCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "PCIe Device Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

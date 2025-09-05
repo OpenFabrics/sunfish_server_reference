@@ -1,0 +1,19 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices",
+    "@odata.type": "#LogServiceCollection.LogServiceCollection",
+    "Description": "Collection of Logs for this Chassis",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Log Service Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

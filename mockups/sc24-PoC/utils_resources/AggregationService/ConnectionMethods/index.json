@@ -1,0 +1,14 @@
+{
+    "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods",
+    "@odata.type": "#AggregationService/ConnectionMethodsCollection.AggregationService/ConnectionMethodsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/CXL"
+        },
+        {
+            "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/CXL2"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "AggregationService/ConnectionMethods Collection"
+}

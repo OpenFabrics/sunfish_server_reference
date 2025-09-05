@@ -1,0 +1,24 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/Roles",
+    "@odata.type": "#RoleCollection.RoleCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Operator"
+        },
+        {
+            "@odata.id": "/redfish/v1/AccountService/Roles/ReadOnly"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "Roles Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

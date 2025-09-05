@@ -1,0 +1,40 @@
+{
+    "@odata.type": "#Storage.v1_15_1.Storage",
+    "Id": "1",
+    "Name": "NVMe Simple SSD Configuration",
+    "Description": "An NVM Express Subsystem is an NVMe device that contains one or more NVM Express controllers and may contain one or more namespaces.",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "Identifiers": [
+        {
+            "DurableNameFormat": "NQN",
+            "DurableName": "nqn.2014-08.org.nvmexpress:uuid:6c5fe566-10e6-4fb6-aad4-8b4159f50245"
+        }
+    ],
+    "Controllers": {
+        "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2/Controllers"
+    },
+    "Drives": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/Drives/NVMeDrive2"
+        }
+    ],
+    "Volumes": {
+        "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2/Volumes"
+    },
+    "StoragePools": {
+        "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2/StoragePools"
+    },
+    "Links": {
+        "Enclosures": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

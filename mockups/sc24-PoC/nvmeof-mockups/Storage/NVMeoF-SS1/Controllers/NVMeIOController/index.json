@@ -1,0 +1,55 @@
+{
+    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Controllers/NVMeIOController",
+    "@odata.type": "#StorageController.v1_6_0.StorageController",
+    "Id": "NVMeIOController",
+    "Name": "NVMe I/O Controller",
+    "Description": "An NVM IO controller is a general-purpose controller that provides access to logical block data and metadata stored on an NVM subsystem’s non-volatile storage medium. IO Controllers may also support management capabilities.",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "SupportedControllerProtocols": [
+        "TCP",
+        "RoCEv2",
+        "FC"
+    ],
+    "SupportedDeviceProtocols": [
+        "NVMeOverFabrics"
+    ],
+    "NVMeControllerProperties": {
+        "NVMeVersion": "1.3",
+        "NVMeControllerAttributes": {
+            "ReportsUUIDList": false,
+            "SupportsSQAssociations": false,
+            "ReportsNamespaceGranularity": false,
+            "SupportsTrafficBasedKeepAlive": false,
+            "SupportsPredictableLatencyMode": false,
+            "SupportsEnduranceGroups": false,
+            "SupportsReadRecoveryLevels": false,
+            "SupportsNVMSets": false,
+            "SupportsExceedingPowerOfNonOperationalState": false,
+            "Supports128BitHostId": false
+        },
+        "ANACharacteristics": [
+            {
+                "AccessState": "Optimized",
+                "Volume": {
+                    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1"
+                }
+            }
+        ]
+    },
+    "Links": {
+        "AttachedVolumes": [
+            {
+                "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1"
+            }
+        ],
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/NVMeSubsystemEndpoint1"
+            }
+        ]
+    },
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

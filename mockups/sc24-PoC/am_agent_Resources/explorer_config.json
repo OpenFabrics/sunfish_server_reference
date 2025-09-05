@@ -1,0 +1,66 @@
+{
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "description": "This example shows an implementation that contains a set of local and remote CXL devicese and shows their connectivity to other components in the service.",
+    "name": "CXL",
+    "navlinks": [
+        {
+            "target": "main",
+            "text": "Main"
+        },
+        {
+            "navlinks": [
+                {
+                    "target": "CXLType1",
+                    "text": "CXLType1"
+                },
+                {
+                    "target": "CXLType2",
+                    "text": "CXLType2"
+                },
+                {
+                    "target": "CXLType3",
+                    "text": "CXLType3"
+                },
+                {
+                    "target": "PooledCXLType1",
+                    "text": "PooledCXLType1"
+                },
+                {
+                    "target": "PooledCXLType2",
+                    "text": "PooledCXLType2"
+                },
+                {
+                    "target": "PooledCXLType3",
+                    "text": "PooledCXLType3"
+                }
+            ],
+            "target": "Chassis",
+            "text": "Chassis"
+        },
+        {
+            "navlinks": [
+                {
+                    "target": "CXL",
+                    "text": "CXL"
+                }
+            ],
+            "target": "Fabrics",
+            "text": "Fabrics"
+        },
+        {
+            "navlinks": [
+                {
+                    "target": "CXL-System",
+                    "text": "CXL-System"
+                }
+            ],
+            "target": "Systems",
+            "text": "Systems"
+        }
+    ]
+}

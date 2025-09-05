@@ -1,0 +1,48 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM2",
+    "@odata.type": "#Memory.v1_18_0.Memory",
+    "CXL": {
+        "LabelStorageSizeBytes": 0,
+        "StagedNonVolatileSizeMiB": 0,
+        "StagedVolatileSizeMiB": 262144
+    },
+    "CapacityMiB": 262144,
+    "Id": "DRAM2",
+    "MemoryMedia": [
+        "DRAM",
+        "NAND"
+    ],
+    "Name": "DRAM memory",
+    "NonVolatileSizeLimitMiB": 0,
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+            }
+        }
+    },
+    "OperatingSpeedMhz": 1333,
+    "Regions": [
+        {
+            "MasterPassphraseEnabled": false,
+            "MemoryClassification": "Volatile",
+            "OffsetMiB": 0,
+            "PassphraseEnabled": false,
+            "RegionId": "1",
+            "SizeMiB": 262144
+        }
+    ],
+    "SecurityStates": {
+        "MasterPassphraseAttemptCountReached": true,
+        "UserPassphraseAttemptCountReached": true
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "VolatileSizeLimitMiB": 262144
+}

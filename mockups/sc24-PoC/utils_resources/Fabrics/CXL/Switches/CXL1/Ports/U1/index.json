@@ -1,0 +1,82 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1",
+    "@odata.type": "#Port.v1_10_0.Port",
+    "Actions": {
+        "#Port.ResetPPB": {
+            "target": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1/Action/Port.Reset"
+        }
+    },
+    "ActiveWidth": 16,
+    "CXL": {
+        "Congestion": {
+            "BackpressureSampleInterval": 3,
+            "CompletionCollectionInterval": 2,
+            "CongestionTelemetryEnabled": true,
+            "EgressModeratePercentage": 20,
+            "EgressSeverePercentage": 3,
+            "MaxSustainedRequestCmpBias": 30
+        },
+        "ConnectedDeviceMode": "PBR",
+        "ConnectedDeviceType": "PCIeDevice",
+        "CurrentPortConfigurationState": "USP",
+        "LinkPartnerTransmit": {
+            "LinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+            "PortId": "1"
+        },
+        "MaxLogicalDeviceCount": 1,
+        "QoSTelemetryCapabilities": {
+            "EgressPortBackpressureSupported": true,
+            "TemporaryThroughputReductionSupported": true
+        },
+        "TemporaryThroughputReductionEnabled": true
+    },
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 512,
+    "Description": "CXL Upstream Port 1 in switch",
+    "Id": "U1",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "AssociatedEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I1"
+            }
+        ],
+        "ConnectedPorts": [
+            {
+                "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors/CPU/Ports/1"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 512,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1/Metrics"
+    },
+    "Name": "CXL Port 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32"
+            }
+        }
+    },
+    "PortId": "1",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "UpstreamPort",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 16
+}

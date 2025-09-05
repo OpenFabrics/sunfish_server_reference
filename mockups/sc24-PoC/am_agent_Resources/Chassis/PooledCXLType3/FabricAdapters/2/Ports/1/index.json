@@ -1,0 +1,54 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/2/Ports/1",
+    "@odata.type": "#Port.v1_10_0.Port",
+    "ActiveWidth": 4,
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 256,
+    "Description": "CXL Port 1 in Fabric Adapter",
+    "Id": "1",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "AssociatedEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+            }
+        ],
+        "ConnectedSwitchPorts": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/D2"
+            }
+        ],
+        "ConnectedSwitches": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL2"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 128,
+    "Name": "CXL Port 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "PortId": "1",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "UpstreamPort",
+    "RemotePortId": "6",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 8
+}

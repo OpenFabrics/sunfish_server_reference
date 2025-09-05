@@ -1,0 +1,42 @@
+{
+    "@odata.type": "#NetworkDeviceFunction.v1_8_0.NetworkDeviceFunction",
+    "Id": "1",
+    "Name": "Network Device Function",
+    "NetDevFuncType": "Ethernet",
+    "DeviceEnabled": true,
+    "NetDevFuncCapabilities": [
+        "Ethernet"
+    ],
+    "MaxVirtualFunctions": 1,
+    "VirtualFunctionsEnabled": false,
+    "Ethernet": {
+        "PermanentMACAddress": "00:0C:29:9A:98:ED",
+        "MACAddress": "00:0C:29:9A:98:ED",
+        "MTUSize": 1500,
+        "VLAN": {
+            "VLANEnable": false,
+            "VLANId": 101
+        },
+        "EthernetInterfaces": {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1/EthernetInterfaces"
+        }
+    },
+    "AssignablePhysicalNetworkPorts": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/Ports/1"
+        }
+    ],
+    "BootMode": "Disabled",
+    "Links": {
+        "PhysicalNetworkPortAssignment": {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/Ports/1"
+        },
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/NVMeSubsystemEndpoint1"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

@@ -1,0 +1,32 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports",
+    "@odata.type": "#Fabrics/CXL/Switches/CXL1/PortsCollection.Fabrics/CXL/Switches/CXL1/PortsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U4"
+        }
+    ],
+    "Members@odata.count": 8,
+    "Name": "Fabrics/CXL/Switches/CXL1/Ports Collection"
+}

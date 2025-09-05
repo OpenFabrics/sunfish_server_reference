@@ -1,0 +1,24 @@
+{
+    "@odata.id": "/redfish/v1/EventService/Subscriptions/SunfishServer",
+    "@odata.type": "#EventDestination.EventDestination",
+    "Context": "",
+    "Destination": "http://127.0.0.1:5000/EventListener",
+    "EventFormatType": "Event",
+    "Id": "SunfishServer",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "OriginResources": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics"
+        }
+    ],
+    "Protocol": "Redfish",
+    "RegistryPrefixes": [
+        "Basic"
+    ],
+    "SubordinateResources": "True"
+}

@@ -1,0 +1,35 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks",
+    "@odata.type": "#Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunksCollection.Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunksCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/8"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/9"
+        }
+    ],
+    "Members@odata.count": 9,
+    "Name": "Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks Collection"
+}

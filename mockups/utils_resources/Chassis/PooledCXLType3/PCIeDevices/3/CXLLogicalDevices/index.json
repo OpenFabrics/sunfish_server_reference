@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/3/CXLLogicalDevices",
+    "@odata.type": "#Chassis/PooledCXLType3/PCIeDevices/3/CXLLogicalDevicesCollection.Chassis/PooledCXLType3/PCIeDevices/3/CXLLogicalDevicesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/3/CXLLogicalDevices/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PooledCXLType3/PCIeDevices/3/CXLLogicalDevices Collection"
+}

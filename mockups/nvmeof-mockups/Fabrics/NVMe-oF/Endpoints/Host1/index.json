@@ -1,0 +1,34 @@
+{
+    "@odata.type": "#Endpoint.v1_7_0.Endpoint",
+    "Id": "Host1",
+    "Name": "Host",
+    "Description": "Initiator Endpoint that can connect to NVMe-oF Subsystem (NVMe-oF)",
+    "EndpointProtocol": "NVMeOverFabrics",
+    "ConnectedEntities": [
+        {
+            "EntityType": "NetworkController",
+            "EntityRole": "Initiator",
+            "EntityLink": {
+                "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1"
+            }
+        }
+    ],
+    "Identifiers": [
+        {
+            "DurableNameFormat": "NQN",
+            "DurableName": "nqn.2014-08.org.nvmexpress:uuid:6c5fe566-10e6-4fb6-aad4-8b4159f50393"
+        }
+    ],
+    "IPTransportDetails": [
+        {
+            "TransportProtocol": "Ethernet",
+            "IPv4Address": {
+                "Address": "192.168.155.5"
+            },
+            "Port": 42
+        }
+    ],
+    "Links": {},
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/Host1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

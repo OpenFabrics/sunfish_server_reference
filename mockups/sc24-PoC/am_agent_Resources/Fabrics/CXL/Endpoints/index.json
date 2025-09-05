@@ -1,0 +1,51 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints",
+    "@odata.type": "#EndpointCollection.EndpointCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.8"
+        }
+    ],
+    "Members@odata.count": 12,
+    "Name": "CXL Endpoint Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

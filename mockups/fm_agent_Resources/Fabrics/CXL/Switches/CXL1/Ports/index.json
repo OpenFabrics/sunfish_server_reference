@@ -1,0 +1,39 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports",
+    "@odata.type": "#PortCollection.PortCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4"
+        }
+    ],
+    "Members@odata.count": 8,
+    "Name": "CXL Port Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/NVMeoF_Agent",
+    "@odata.type": "#ConnectionMethod.v1_1_0.ConnectionMethod",
+    "ConnectionMethodType": "Redfish",
+    "ConnectionMethodVariant": "Contoso",
+    "Id": "NVMeoF_Agent",
+    "Links": {
+        "AggregationSources": []
+    },
+    "Name": "ConnectionMethod for Agent NVMeoF",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

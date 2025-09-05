@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/4/Ports",
+    "@odata.type": "#Chassis/PooledCXLType3/FabricAdapters/4/PortsCollection.Chassis/PooledCXLType3/FabricAdapters/4/PortsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/4/Ports/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PooledCXLType3/FabricAdapters/4/Ports Collection"
+}

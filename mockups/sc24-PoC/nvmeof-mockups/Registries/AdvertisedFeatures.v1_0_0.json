@@ -1,0 +1,17 @@
+{
+    "@odata.type": "#FeaturesRegistry.v1_1_1.FeaturesRegistry",
+    "Id": "AdvertisedFeatures.v1_0_0",
+    "Name": "Global Swordfish Features Registry",
+    "Language": "en",
+    "RegistryPrefix": "SwordfishFeaturesRegistry",
+    "RegistryVersion": "1.6.0",
+    "OwningEntity": "SNIA",
+    "Features": [
+        {
+            "FeatureName": "SNIA.Swordfish.NVMeoF",
+            "Description": "Supports the NVMe over Fabrics Feature set.",
+            "Version": "1.1.1",
+            "CorrespondingProfileDefinition": "SwordfishNVMeoF.v1_1_1.json"
+        }
+    ]
+}

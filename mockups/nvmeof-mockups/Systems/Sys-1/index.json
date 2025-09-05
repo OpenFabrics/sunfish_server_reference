@@ -1,0 +1,35 @@
+{
+    "@odata.type": "#ComputerSystem.v1_18_0.ComputerSystem",
+    "Id": "Sys-1",
+    "Name": "WebFrontEnd483",
+    "SystemType": "Physical",
+    "AssetTag": "Chicago-45Z-2381",
+    "Manufacturer": "Contoso",
+    "Model": "3500RX",
+    "SKU": "8675309",
+    "SerialNumber": "Sys-1",
+    "PartNumber": "224071-J23",
+    "Description": "Web Front End node",
+    "UUID": "38947555-7742-3448-3784-823347823834",
+    "HostName": "web483",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK",
+        "HealthRollup": "OK"
+    },
+    "HostingRoles": [
+        "StorageServer"
+    ],
+    "Storage": {
+        "@odata.id": "/redfish/v1/Systems/Sys-1/Storage"
+    },
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Systems/Sys-1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

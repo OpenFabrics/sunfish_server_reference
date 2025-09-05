@@ -1,0 +1,51 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T5",
+    "@odata.type": "#Endpoint.v1_8_0.Endpoint",
+    "ConnectedEntities": [
+        {
+            "EntityLink": {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/5"
+            },
+            "EntityRole": "Target",
+            "EntityType": "FabricBridge"
+        },
+        {
+            "EntityLink": {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/5/MemoryChunks/1"
+            },
+            "EntityRole": "Target",
+            "EntityType": "MemoryChunk"
+        }
+    ],
+    "Description": "CXL Device Type 3 target endpoint",
+    "EndpointProtocol": "CXL",
+    "Id": "T5",
+    "Links": {
+        "Connections": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Connections/13"
+            }
+        ],
+        "Ports": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/5/Ports/1"
+            }
+        ],
+        "Zones": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Zones/3"
+            }
+        ]
+    },
+    "Name": "CXL Device Type 3 endpoint",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32"
+            }
+        }
+    }
+}

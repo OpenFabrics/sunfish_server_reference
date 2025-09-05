@@ -1,0 +1,18 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/4/Ports",
+    "@odata.type": "#PortCollection.PortCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/4/Ports/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "CXL Port Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

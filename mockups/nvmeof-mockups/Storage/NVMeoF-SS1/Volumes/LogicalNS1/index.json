@@ -1,0 +1,26 @@
+{
+    "@odata.type": "#Volume.v1_10_0.Volume",
+    "Id": "LogicalNS1",
+    "Name": "LogicalNamespace1",
+    "Status": {
+        "State": "Enabled"
+    },
+    "CapacitySources": [
+        {
+            "@odata.type": "#Capacity.v1_2_0.CapacitySource",
+            "Id": "NVMeoF_Source1",
+            "Name": "NVMeoF Source1",
+            "ProvidedCapacity": {
+                "Data": {
+                    "AllocatedBytes": 10737418240
+                }
+            },
+            "ProvidingPools": {
+                "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1/CapacitySources/NVMeoF_Source1/ProvidingPools"
+            },
+            "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1/CapacitySources/NVMeoF_Source1"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

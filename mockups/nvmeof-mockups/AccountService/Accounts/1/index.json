@@ -1,0 +1,18 @@
+{
+    "@odata.type": "#ManagerAccount.v1_1_0.ManagerAccount",
+    "Id": "1",
+    "Name": "User Account",
+    "Description": "User Account",
+    "Enabled": true,
+    "Password": null,
+    "UserName": "Administrator",
+    "RoleId": "Administrator",
+    "Locked": false,
+    "Links": {
+        "Role": {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Admin"
+        }
+    },
+    "@odata.id": "/redfish/v1/AccountService/Accounts/1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

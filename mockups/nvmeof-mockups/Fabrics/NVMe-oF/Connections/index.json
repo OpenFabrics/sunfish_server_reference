@@ -1,0 +1,15 @@
+{
+    "@odata.type": "#ConnectionCollection.ConnectionCollection",
+    "Name": "NVMeoF Connection Collection",
+    "Members@odata.count": 2,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Connections/NVMe-oF-SubsystemConnection1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Connections/NVMe-oF-SubsystemConnection2"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Connections",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

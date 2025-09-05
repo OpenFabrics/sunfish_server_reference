@@ -1,0 +1,23 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory",
+    "@odata.type": "#Chassis/PooledCXLType3/MemoryCollection.Chassis/PooledCXLType3/MemoryCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM5"
+        }
+    ],
+    "Members@odata.count": 5,
+    "Name": "Chassis/PooledCXLType3/Memory Collection"
+}

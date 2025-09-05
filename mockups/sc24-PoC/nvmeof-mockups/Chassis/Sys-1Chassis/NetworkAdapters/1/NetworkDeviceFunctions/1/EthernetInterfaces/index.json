@@ -1,0 +1,14 @@
+{
+    "@odata.type": "#EthernetInterfaceCollection.EthernetInterfaceCollection",
+    "Name": "Ethernet  Interface Collection",
+    "Description": "Simple Network Collection",
+    "Members@odata.count": 2,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1/EthernetInterfaces/1"
+        }
+    ],
+    "Oem": {},
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1/EthernetInterfaces",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1",
+    "@odata.type": "#ServiceRoot.v1_14_0.ServiceRoot",
+    "Id": "RootService",
+    "Name": "Root Service",
+    "RedfishVersion": "1.14.0",
+    "Systems": {
+        "@odata.id": "/redfish/v1/Systems"
+    },
+    "CompositionService": {
+        "@odata.id": "/redfish/v1/CompositionService"
+    },
+    "EventService": {
+        "@odata.id": "/redfish/v1/EventService"
+    },
+    "AggregationServiceService": {
+        "@odata.id": "/redfish/v1/AggregationService"
+
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors",
+    "@odata.type": "#Systems/CXL-System1/ProcessorsCollection.Systems/CXL-System1/ProcessorsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors/CPU"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Systems/CXL-System1/Processors Collection"
+}

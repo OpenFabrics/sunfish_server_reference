@@ -1,0 +1,17 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U2/Metrics",
+    "@odata.type": "#PortMetrics.v1_5_0.PortMetrics",
+    "CXL": {
+        "BackpressureAveragePercentage": 17
+    },
+    "Description": "CXL Port 2 Metrics",
+    "Id": "Metrics",
+    "Name": "CXL Port 2 Metrics",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

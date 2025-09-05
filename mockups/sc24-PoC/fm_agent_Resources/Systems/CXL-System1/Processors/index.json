@@ -1,0 +1,18 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors",
+    "@odata.type": "#ProcessorCollection.ProcessorCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors/CPU"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Processors Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

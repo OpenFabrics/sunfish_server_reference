@@ -1,0 +1,16 @@
+{
+    "@odata.type": "#Capacity.v1_2_0.CapacitySource",
+    "Id": "Source1",
+    "Name": "Source1",
+    "ProvidedCapacity": {
+        "Data": {
+            "ConsumedBytes": 300067890136,
+            "AllocatedBytes": 600135780272
+        }
+    },
+    "ProvidingVolumes": {
+        "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool/CapacitySources/Source1/ProvidingVolumes"
+    },
+    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool/CapacitySources/Source1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

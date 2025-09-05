@@ -1,0 +1,32 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices",
+    "@odata.type": "#Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevicesCollection.Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevicesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/4"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/5"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/6"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/7"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/8"
+        }
+    ],
+    "Members@odata.count": 8,
+    "Name": "Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices Collection"
+}

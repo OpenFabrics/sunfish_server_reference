@@ -1,0 +1,37 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I1",
+    "@odata.type": "#Endpoint.v1_8_0.Endpoint",
+    "ConnectedEntities": [
+        {
+            "EntityLink": {
+                "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors/CPU"
+            },
+            "EntityRole": "Initiator",
+            "EntityType": "Processor",
+            "Identifiers": [
+                {
+                    "DurableName": "a0a2518e-3952-4128-9c92-6f2ff280aede",
+                    "DurableNameFormat": "UUID"
+                }
+            ]
+        }
+    ],
+    "Description": "CXL-System Initiator Endpoint for CXL processor ",
+    "EndpointProtocol": "CXL",
+    "Id": "I1",
+    "Links": {
+        "Ports": [
+            {
+                "@odata.id": "/redfish/v1/Systems/CXL-System1/Processors/CPU/Ports/1"
+            }
+        ]
+    },
+    "Name": "CXL-System Initiator",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

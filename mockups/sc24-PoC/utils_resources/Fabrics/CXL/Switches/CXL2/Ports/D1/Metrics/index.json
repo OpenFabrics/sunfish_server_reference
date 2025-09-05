@@ -1,0 +1,20 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/D1/Metrics",
+    "@odata.type": "#PortMetrics.v1_5_0.PortMetrics",
+    "CXL": {
+        "BackpressureAveragePercentage": 17
+    },
+    "Description": "CXL Port 5 Metrics",
+    "Id": "Metrics",
+    "Name": "CXL Port 5 Metrics",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+            }
+        }
+    }
+}

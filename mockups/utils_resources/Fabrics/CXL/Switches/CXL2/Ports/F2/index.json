@@ -1,0 +1,87 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F2",
+    "@odata.type": "#Port.v1_10_0.Port",
+    "Actions": {
+        "#Port.ResetPPB": {
+            "target": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F2/Action/Port.Reset"
+        }
+    },
+    "ActiveWidth": 16,
+    "CXL": {
+        "Congestion": {
+            "BackpressureSampleInterval": 3,
+            "CompletionCollectionInterval": 2,
+            "CongestionTelemetryEnabled": true,
+            "EgressModeratePercentage": 20,
+            "EgressSeverePercentage": 3,
+            "MaxSustainedRequestCmpBias": 30
+        },
+        "ConnectedDeviceMode": "PBR",
+        "ConnectedDeviceType": "CXLSwitch (reserved)",
+        "CurrentPortConfigurationState": "FabricLink (reserved)",
+        "LinkPartnerReceive": {
+            "LinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+            "PortId": "6"
+        },
+        "LinkPartnerTransmit": {
+            "LinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+            "PortId": "2"
+        },
+        "MaxLogicalDeviceCount": 8,
+        "QoSTelemetryCapabilities": {
+            "EgressPortBackpressureSupported": true,
+            "TemporaryThroughputReductionSupported": true
+        },
+        "TemporaryThroughputReductionEnabled": true
+    },
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 256,
+    "Description": "CXL Fabric Port 2 in switch",
+    "Id": "F2",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "ConnectedSwitchPorts": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2"
+            }
+        ],
+        "ConnectedSwitches": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 512,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F2/Metrics"
+    },
+    "Name": "CXL Port F2",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "BoundaryPort",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+            }
+        }
+    },
+    "PortId": "2",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "InterswitchPort",
+    "RemotePortId": "6",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 8
+}

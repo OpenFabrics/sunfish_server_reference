@@ -1,0 +1,36 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/2",
+    "@odata.type": "#MemoryChunks.v1_6_0.MemoryChunks",
+    "AddressRangeOffsetMiB": 5120,
+    "AddressRangeType": "Volatile",
+    "Description": "Memory chunk accessible through CXL fabric",
+    "DisplayName": "UUID12",
+    "Id": "2",
+    "Links": {
+        "CXLLogicalDevices": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/2"
+            }
+        ],
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/T1"
+            }
+        ]
+    },
+    "MediaLocation": "Local",
+    "MemoryChunkSizeMiB": 4096,
+    "Name": "Memory Chunk 2",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "RequestedOperationalState": "Online",
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1",
+    "@odata.type": "#LogService.v1_5_1.LogService",
+    "Actions": {
+        "#LogService.ClearLog": {
+            "target": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Actions/LogService.ClearLog"
+        }
+    },
+    "DateTime": "2022-08-01T04:14:33+06:00",
+    "DateTimeLocalOffset": "+06:00",
+    "Description": "This log contains entries related to the operation of the CXL Module.",
+    "Entries": {
+        "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries"
+    },
+    "Id": "LocalLog1",
+    "LogEntryType": "Event",
+    "MaxNumberOfRecords": 1000,
+    "Name": "CXL Module Log Service",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "OverWritePolicy": "WrapsWhenFull",
+    "Overflow": true,
+    "Persistency": true,
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

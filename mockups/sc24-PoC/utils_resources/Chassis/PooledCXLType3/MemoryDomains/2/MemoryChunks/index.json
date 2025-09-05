@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/2/MemoryChunks",
+    "@odata.type": "#Chassis/PooledCXLType3/MemoryDomains/2/MemoryChunksCollection.Chassis/PooledCXLType3/MemoryDomains/2/MemoryChunksCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/2/MemoryChunks/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/PooledCXLType3/MemoryDomains/2/MemoryChunks Collection"
+}

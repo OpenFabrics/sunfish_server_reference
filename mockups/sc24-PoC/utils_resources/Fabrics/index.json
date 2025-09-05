@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Fabrics",
+    "@odata.type": "#FabricsCollection.FabricsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Fabrics/CXL"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Fabrics Collection"
+}

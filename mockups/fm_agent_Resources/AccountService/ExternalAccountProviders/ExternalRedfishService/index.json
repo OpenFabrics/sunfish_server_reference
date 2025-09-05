@@ -1,0 +1,36 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders/ExternalRedfishService",
+    "@odata.type": "#ExternalAccountProvider.v1_7_0.ExternalAccountProvider",
+    "AccountProviderType": "RedfishService",
+    "Authentication": {
+        "AuthenticationType": "Token",
+        "Token": null
+    },
+    "Description": "Remote Redfish Service providing additional Accounts to this Redfish Service",
+    "Id": "ExternalRedfishService",
+    "Name": "Remote Redfish Service",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "RemoteRoleMapping": [
+        {
+            "LocalRole": "Administrator",
+            "RemoteGroup": "Admin"
+        },
+        {
+            "LocalRole": "Operator",
+            "RemoteGroup": "Operator"
+        },
+        {
+            "LocalRole": "ReadOnly",
+            "RemoteGroup": "ReadOnly"
+        }
+    ],
+    "ServiceAddresses": [
+        "http://redfish.dmtf.org/redfish/v1/AccountService"
+    ]
+}

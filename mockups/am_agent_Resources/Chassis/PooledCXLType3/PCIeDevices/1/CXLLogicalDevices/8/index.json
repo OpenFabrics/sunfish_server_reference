@@ -1,0 +1,60 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/8",
+    "@odata.type": "#CXLLogicalDevice.v1_1_0.CXLLogicalDevice",
+    "Description": "CXL Logical Device Type 3 accessible through CXL fabric",
+    "Id": "8",
+    "Identifiers": [
+        {
+            "DurableName": "4C-1D-96-FF-FE-DD-D8-35:0008",
+            "DurableNameFormat": "GCXLID"
+        }
+    ],
+    "Links": {
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/VT1.8"
+            }
+        ],
+        "MemoryChunks": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks/8"
+            }
+        ],
+        "MemoryDomains": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1"
+            }
+        ],
+        "PCIeFunctions": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/8"
+            }
+        ]
+    },
+    "MemorySizeMiB": 16384,
+    "Name": "CXL Logical Device Type 3",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "QoS": {
+        "AllocatedBandwidth": 64,
+        "LimitPercent": 85
+    },
+    "QoSTelemetryCapabilities": {
+        "EgressPortBackpressureSupported": true,
+        "TemporaryThroughputReductionSupported": true
+    },
+    "SemanticsSupported": [
+        "CXLio",
+        "CXLmem"
+    ],
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders",
+    "@odata.type": "#ExternalAccountProviderCollection.ExternalAccountProviderCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders/ExternalRedfishService"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "External Account Provider Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

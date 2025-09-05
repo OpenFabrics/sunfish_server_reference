@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains",
+    "@odata.type": "#Chassis/PooledCXLType3/MemoryDomainsCollection.Chassis/PooledCXLType3/MemoryDomainsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Chassis/PooledCXLType3/MemoryDomains Collection"
+}

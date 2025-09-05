@@ -1,0 +1,67 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3",
+    "@odata.type": "#Port.v1_10_0.Port",
+    "Actions": {
+        "#Port.ResetPPB": {
+            "target": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3/Action/Port.Reset"
+        }
+    },
+    "CXL": {
+        "Congestion": {
+            "BackpressureSampleInterval": 3,
+            "CompletionCollectionInterval": 2,
+            "CongestionTelemetryEnabled": false,
+            "EgressModeratePercentage": 20,
+            "EgressSeverePercentage": 3,
+            "MaxSustainedRequestCmpBias": 30
+        },
+        "ConnectedDeviceMode": "Disconnected",
+        "ConnectedDeviceType": "None",
+        "CurrentPortConfigurationState": "Disabled",
+        "LinkPartnerTransmit": {
+
+            "LinkPartnerId":"bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+            "PortId":"7"
+        },
+
+        "MaxLogicalDeviceCount": 8,
+        "QoSTelemetryCapabilities": {
+            "EgressPortBackpressureSupported": true,
+            "TemporaryThroughputReductionSupported": true
+        },
+        "TemporaryThroughputReductionEnabled": false
+    },
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "Description": "CXL Fabric Port 3 in switch",
+    "Id": "F3",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Disabled",
+    "LinkStatus": "NoLink",
+    "MaxSpeedGbps": 512,
+    "Metrics": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3/Metrics"
+    },
+    "Name": "CXL Port F3",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "BoundaryPort"
+        }
+    },
+    "PortId": "7",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "InterswitchPort",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Disabled"
+    },
+    "Width": 8
+}

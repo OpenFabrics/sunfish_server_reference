@@ -1,0 +1,106 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService",
+    "@odata.type": "#AccountService.v1_14_0.AccountService",
+    "AccountLockoutCounterResetAfter": 30,
+    "AccountLockoutCounterResetEnabled": true,
+    "AccountLockoutDuration": 30,
+    "AccountLockoutThreshold": 5,
+    "Accounts": {
+        "@odata.id": "/redfish/v1/AccountService/Accounts"
+    },
+    "ActiveDirectory": {
+        "AccountProviderType": "ActiveDirectoryService",
+        "Authentication": {
+            "AuthenticationType": "KerberosKeytab",
+            "KerberosKeytab": null
+        },
+        "RemoteRoleMapping": [
+            {
+                "LocalRole": "Administrator",
+                "RemoteGroup": "Administrators"
+            },
+            {
+                "LocalRole": "Operator",
+                "RemoteUser": "DOMAIN\\Bob"
+            },
+            {
+                "LocalRole": "Operator",
+                "RemoteGroup": "PowerUsers"
+            },
+            {
+                "LocalRole": "ReadOnly",
+                "RemoteGroup": "Everybody"
+            }
+        ],
+        "ServiceAddresses": [
+            "ad1.example.org",
+            "ad2.example.org",
+            null,
+            null
+        ],
+        "ServiceEnabled": true
+    },
+    "AdditionalExternalAccountProviders": {
+        "@odata.id": "/redfish/v1/AccountService/ExternalAccountProviders"
+    },
+    "AuthFailureLoggingThreshold": 3,
+    "Description": "Account Service",
+    "Id": "AccountService",
+    "LDAP": {
+        "AccountProviderType": "LDAPService",
+        "Authentication": {
+            "AuthenticationType": "UsernameAndPassword",
+            "Password": null,
+            "Username": "cn=Manager,dc=example,dc=org"
+        },
+        "LDAPService": {
+            "SearchSettings": {
+                "BaseDistinguishedNames": [
+                    "dc=example,dc=org"
+                ],
+                "GroupsAttribute": "memberof",
+                "UsernameAttribute": "uid"
+            }
+        },
+        "RemoteRoleMapping": [
+            {
+                "LocalRole": "Administrator",
+                "RemoteUser": "cn=Manager,dc=example,dc=org"
+            },
+            {
+                "LocalRole": "Administrator",
+                "RemoteGroup": "cn=Admins,ou=Groups,dc=example,dc=org"
+            },
+            {
+                "LocalRole": "Operator",
+                "RemoteGroup": "cn=PowerUsers,ou=Groups,dc=example,dc=org"
+            },
+            {
+                "LocalRole": "ReadOnly",
+                "RemoteGroup": "(cn=*)"
+            }
+        ],
+        "ServiceAddresses": [
+            "ldaps://ldap.example.org:636"
+        ],
+        "ServiceEnabled": false
+    },
+    "LocalAccountAuth": "Enabled",
+    "MinPasswordLength": 8,
+    "Name": "Account Service",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Roles": {
+        "@odata.id": "/redfish/v1/AccountService/Roles"
+    },
+    "ServiceEnabled": true,
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    }
+}

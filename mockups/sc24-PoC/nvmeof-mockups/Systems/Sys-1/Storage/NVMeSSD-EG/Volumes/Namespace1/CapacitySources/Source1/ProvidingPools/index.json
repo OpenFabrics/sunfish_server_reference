@@ -1,0 +1,12 @@
+{
+    "@odata.type": "#StoragePoolCollection.StoragePoolCollection",
+    "Members@odata.count": 1,
+    "Name": "ProvidingPools",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/StoragePools/EnduranceGroup0"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/Volumes/Namespace1/CapacitySources/Source1/ProvidingPools",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

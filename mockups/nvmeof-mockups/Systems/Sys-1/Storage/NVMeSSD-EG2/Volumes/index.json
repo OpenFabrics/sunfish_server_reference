@@ -1,0 +1,14 @@
+{
+    "@odata.type": "#VolumeCollection.VolumeCollection",
+    "Name": "Storage Volume Collection",
+    "Description": "Storage Volume Collection",
+    "Members@odata.count": 3,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2/Volumes/Namespace1"
+        }
+    ],
+    "Oem": {},
+    "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG2/Volumes",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

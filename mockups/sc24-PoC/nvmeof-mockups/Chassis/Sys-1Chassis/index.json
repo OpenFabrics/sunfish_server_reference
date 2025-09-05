@@ -1,0 +1,36 @@
+{
+    "@odata.type": "#Chassis.v1_20_0.Chassis",
+    "Id": "Sys-1Chassis",
+    "Name": "Sys-1Chassis System Chassis",
+    "ChassisType": "StorageEnclosure",
+    "Manufacturer": "Contoso",
+    "Model": "NV4000",
+    "SerialNumber": "546XR2742R7",
+    "PartNumber": "NV4000-RX",
+    "PowerState": "On",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "Thermal": {
+        "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/Thermal"
+    },
+    "Power": {
+        "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/Power"
+    },
+    "Drives": {
+        "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/Drives"
+    },
+    "NetworkAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters"
+    },
+    "Links": {
+        "ComputerSystems": [
+            {
+                "@odata.id": "/redfish/v1/Systems/Sys-1"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}
