@@ -1,0 +1,83 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32",
+    "@odata.type": "#AggregationSource.v1_2_.AggregationSource",
+    "Description": "CXL Fabric",
+    "Endpoints": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints"
+    },
+    "FabricType": "CXL",
+    "HostName": "http://127.0.0.1:5001",
+    "Id": "96d7abb4-3473-4b21-88bc-12d121013f32",
+    "Links": {
+        "ConnectionMethod": {
+            "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/CXL"
+        },
+        "ResourcesAccessed": [
+            "/redfish/v1/Fabrics/CXL",
+            "/redfish/v1/Fabrics/CXL/Endpoints",
+            "/redfish/v1/Fabrics/CXL/Endpoints/I1",
+            "/redfish/v1/Fabrics/CXL/Endpoints/I2",
+            "/redfish/v1/Fabrics/CXL/Endpoints/I3",
+            "/redfish/v1/Fabrics/CXL/Endpoints/T5",
+            "/redfish/v1/Fabrics/CXL/Switches",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U1/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U2",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U2/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U3",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U3/Metrics",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U4",
+            "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U4/Metrics",
+            "/redfish/v1/Systems/CXL-System1",
+            "/redfish/v1/Chassis/CXL-Chassis",
+            "/redfish/v1/Chassis/CXL-Chassis/LogServices",
+            "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1",
+            "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries",
+            "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries/1",
+            "/redfish/v1/Chassis/CXL-Chassis/Thermal",
+            "/redfish/v1/Systems/CXL-System1/Processors",
+            "/redfish/v1/Systems/CXL-System1/Processors/CPU",
+            "/redfish/v1/Systems/CXL-System1/Processors/CPU/Ports",
+            "/redfish/v1/Systems/CXL-System1/Processors/CPU/Ports/1",
+            "/redfish/v1/Systems/CXL-System2",
+            "/redfish/v1/Systems/CXL-System2/Processors",
+            "/redfish/v1/Systems/CXL-System2/Processors/CPU",
+            "/redfish/v1/Systems/CXL-System2/Processors/CPU/Ports",
+            "/redfish/v1/Systems/CXL-System2/Processors/CPU/Ports/1",
+            "/redfish/v1/Systems/CXL-System3",
+            "/redfish/v1/Systems/CXL-System3/Processors",
+            "/redfish/v1/Systems/CXL-System3/Processors/CPU",
+            "/redfish/v1/Systems/CXL-System3/Processors/CPU/Ports",
+            "/redfish/v1/Systems/CXL-System3/Processors/CPU/Ports/1"
+        ]
+    },
+    "Name": "CXL Fabric",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32"
+            }
+        }
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Switches": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Switches"
+    },
+    "UUID": "1af883ee-d4b7-400d-afb2-536d2c2aea31"
+}

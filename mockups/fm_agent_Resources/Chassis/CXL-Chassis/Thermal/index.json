@@ -1,0 +1,120 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal",
+    "@odata.type": "#Thermal.v1_7_1.Thermal",
+    "Fans": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Fans/0",
+            "LowerThresholdCritical": 5,
+            "LowerThresholdFatal": 42,
+            "LowerThresholdNonCritical": 42,
+            "MaxReadingRange": 5000,
+            "MemberId": "0",
+            "MinReadingRange": 0,
+            "Name": "BaseBoard System Fan",
+            "ReadingRPM": 2100,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Redundancy/0"
+                }
+            ],
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis"
+                }
+            ],
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 4200,
+            "UpperThresholdFatal": 42,
+            "UpperThresholdNonCritical": 42
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Fans/1",
+            "LowerThresholdCritical": 5,
+            "LowerThresholdFatal": 42,
+            "LowerThresholdNonCritical": 42,
+            "MaxReadingRange": 5000,
+            "MemberId": "1",
+            "MinReadingRange": 0,
+            "Name": "BaseBoard System Fan Backup",
+            "ReadingRPM": 2100,
+            "Redundancy": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Redundancy/0"
+                }
+            ],
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis"
+                }
+            ],
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 4200,
+            "UpperThresholdFatal": 42,
+            "UpperThresholdNonCritical": 42
+        }
+    ],
+    "Id": "Thermal",
+    "Name": "Thermal",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Redundancy": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Redundancy/0",
+            "MaxNumSupported": 2,
+            "MemberId": "0",
+            "MinNumNeeded": 1,
+            "Mode": "N+1",
+            "Name": "BaseBoard System Fans",
+            "RedundancySet": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Fans/0"
+                },
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Fans/1"
+                }
+            ],
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            }
+        }
+    ],
+    "Temperatures": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal#/Temperatures/0",
+            "LowerThresholdCritical": 5,
+            "LowerThresholdFatal": 0,
+            "LowerThresholdNonCritical": 10,
+            "MaxReadingRangeTemp": 200,
+            "MemberId": "0",
+            "MinReadingRangeTemp": 0,
+            "Name": "Chassis Intake Temp",
+            "PhysicalContext": "Intake",
+            "ReadingCelsius": 25,
+            "RelatedItem": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis"
+                }
+            ],
+            "SensorNumber": 42,
+            "Status": {
+                "Health": "OK",
+                "State": "Enabled"
+            },
+            "UpperThresholdCritical": 40,
+            "UpperThresholdFatal": 50,
+            "UpperThresholdNonCritical": 30
+        }
+    ]
+}

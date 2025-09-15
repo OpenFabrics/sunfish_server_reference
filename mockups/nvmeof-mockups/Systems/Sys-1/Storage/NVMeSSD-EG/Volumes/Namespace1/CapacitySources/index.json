@@ -1,0 +1,14 @@
+{
+    "@odata.type": "#CapacitySourceCollection.CapacitySourceCollection",
+    "Name": "Capacity Source Collection",
+    "Description": "Capacity SourceCollection",
+    "Members@odata.count": 1,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/Volumes/Namespace1/CapacitySources/Source1"
+        }
+    ],
+    "Oem": {},
+    "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/Volumes/Namespace1/CapacitySources",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

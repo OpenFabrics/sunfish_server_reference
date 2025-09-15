@@ -1,0 +1,54 @@
+{
+    "@odata.type": "#Port.v1_6_1.Port",
+    "Id": "1",
+    "Name": "Port View",
+    "Enabled": true,
+    "LinkNetworkTechnology": "Ethernet",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "LinkConfiguration": [
+        {
+            "CapableLinkSpeedGbps": [
+                10000
+            ],
+            "AutoSpeedNegotiationCapable": true,
+            "AutoSpeedNegotiationEnabled": false,
+            "ConfiguredNetworkLinks": [
+                {
+                    "ConfiguredLinkSpeedGbps": 100,
+                    "ConfiguredWidth": 4
+                }
+            ]
+        }
+    ],
+    "PortId": "1",
+    "PortProtocol": "Ethernet",
+    "CurrentSpeedGbps": 10,
+    "MaxSpeedGbps": 100,
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "InterfaceEnabled": true,
+    "Ethernet": {
+        "AssociatedMACAddresses": [],
+        "EEEEnabled": false,
+        "FlowControlStatus": "None",
+        "FlowControlConfiguration": "None",
+        "WakeOnLANEnabled": false
+    },
+    "SignalDetected": true,
+    "SFP": {
+        "Type": "SFP",
+        "Status": {
+            "State": "Enabled",
+            "Health": "OK"
+        }
+    },
+    "Width": 4,
+    "Links": {
+        "AssociatedEndpoints": []
+    },
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/Ports/1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

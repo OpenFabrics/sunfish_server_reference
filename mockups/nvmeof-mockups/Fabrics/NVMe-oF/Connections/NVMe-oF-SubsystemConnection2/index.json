@@ -1,0 +1,31 @@
+{
+    "@odata.type": "#Connection.v1_0_0.Connection",
+    "Id": "NVMe-oF-SubsystemConnection",
+    "Name": "NVMe-oFSubsystem Restricted access",
+    "Description": "Connection info for NVMe-oFSubsystem Restricted access",
+    "ConnectionType": "Storage",
+    "VolumeInfo": [
+        {
+            "AccessCapabilities": [
+                "Read"
+            ],
+            "Volume": {
+                "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1"
+            }
+        }
+    ],
+    "Links": {
+        "InitiatorEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/Host1"
+            }
+        ],
+        "TargetEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/NVMeSubsystemEndpoint1"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Connections/NVMe-oF-SubsystemConnection2",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

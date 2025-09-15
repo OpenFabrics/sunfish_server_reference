@@ -1,0 +1,37 @@
+{
+    "@odata.type": "#Endpoint.v1_7_0.Endpoint",
+    "Id": "Host",
+    "Name": "Allowed Host",
+    "Description": "Allowed Host (NVMe-oF)",
+    "EndpointProtocol": "NVMeOverFabrics",
+    "ConnectedEntities": [
+        {
+            "EntityType": "NetworkController",
+            "EntityRole": "Initiator",
+            "Identifiers": [
+                {
+                    "DurableNameFormat": "NQN",
+                    "DurableName": "nqn.2014-08.org.nvmexpress:uuid:6c5f5466-10e6-4fb6-aad4-8b4159029392"
+                }
+            ]
+        }
+    ],
+    "Identifiers": [
+        {
+            "DurableNameFormat": "NQN",
+            "DurableName": "nqn.2014-08.org.nvmexpress:uuid:6c5fe566-10e6-4fb6-aad4-8b4159f50390"
+        }
+    ],
+    "IPTransportDetails": [
+        {
+            "TransportProtocol": "Ethernet",
+            "IPv4Address": {
+                "Address": "10.3.5.205"
+            },
+            "Port": 42
+        }
+    ],
+    "Links": {},
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/Host",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

@@ -1,0 +1,49 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Systems/CXL-System3/Processors/CPU/Ports/1",
+    "@odata.type": "#Port.v1_10_0.Port",
+    "ActiveWidth": 16,
+    "CapableProtocolVersions": [
+        "1.1",
+        "2.0"
+    ],
+    "CurrentProtocolVersion": "2.0",
+    "CurrentSpeedGbps": 512,
+    "Description": "CXL Port in CPU connected to CXL switch",
+    "Id": "1",
+    "InterfaceEnabled": true,
+    "LinkNetworkTechnology": "PCIe",
+    "LinkState": "Enabled",
+    "LinkStatus": "LinkUp",
+    "Links": {
+        "ConnectedSwitchPorts": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/U3"
+            }
+        ],
+        "ConnectedSwitches": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Switches/CXL1"
+            }
+        ]
+    },
+    "MaxSpeedGbps": 512,
+    "Name": "CXL Port 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "PortId": "1",
+    "PortMedium": "Optical",
+    "PortProtocol": "CXL",
+    "PortType": "DownstreamPort",
+    "RemotePortId": "3",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "Width": 16
+}

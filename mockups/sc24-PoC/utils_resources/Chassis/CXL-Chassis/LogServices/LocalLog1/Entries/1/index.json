@@ -1,0 +1,33 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries/1",
+    "@odata.type": "#LogEntry.v1_15_1.LogEntry",
+    "CXLEntryType": "Informational",
+    "Created": "2012-03-07T14:44",
+    "EntryType": "CXL",
+    "Id": "1",
+    "Links": {
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal"
+        }
+    },
+    "Message": "Message for Event, Description for SEL, OEM depends",
+    "MessageArgs": [
+        "ArrayOfMessageArgs"
+    ],
+    "MessageId": "Event.1.0.TempAssert",
+    "Name": "Log Entry 1",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32"
+            }
+        }
+    },
+    "Originator": "Thermal Control",
+    "OriginatorType": "Internal",
+    "SensorNumber": 1,
+    "Severity": "Critical"
+}

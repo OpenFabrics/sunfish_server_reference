@@ -1,0 +1,45 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/",
+    "@odata.type": "#ServiceRoot.v1_16_0.ServiceRoot",
+    "AccountService": {
+        "@odata.id": "/redfish/v1/AccountService"
+    },
+    "Chassis": {
+        "@odata.id": "/redfish/v1/Chassis"
+    },
+    "Fabrics": {
+        "@odata.id": "/redfish/v1/Fabrics"
+    },
+    "Id": "RootService",
+    "Name": "Root Service",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Product": "WidgetDeluxe 8744",
+    "ProtocolFeaturesSupported": {
+        "ExcerptQuery": true,
+        "ExpandQuery": {
+            "ExpandAll": true,
+            "Levels": true,
+            "Links": false,
+            "MaxLevels": 3,
+            "NoLinks": true
+        },
+        "FilterQuery": false,
+        "OnlyMemberQuery": true,
+        "SelectQuery": false
+    },
+    "RedfishVersion": "1.6.0",
+    "SessionService": {
+        "@odata.id": "/redfish/v1/SessionService"
+    },
+    "Systems": {
+        "@odata.id": "/redfish/v1/Systems"
+    },
+    "UUID": "92384634-2938-2342-8820-489239905423",
+    "Vendor": "Contoso"
+}

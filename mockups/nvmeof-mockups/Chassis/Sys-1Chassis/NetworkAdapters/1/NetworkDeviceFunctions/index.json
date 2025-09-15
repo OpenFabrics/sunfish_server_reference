@@ -1,0 +1,12 @@
+{
+    "@odata.type": "#NetworkDeviceFunctionCollection.NetworkDeviceFunctionCollection",
+    "Name": "Network Device Function Collection",
+    "Members@odata.count": 1,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions/1"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/NetworkDeviceFunctions",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

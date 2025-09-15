@@ -1,0 +1,24 @@
+{
+    "@odata.type": "#Zone.v1_4_0.Zone",
+    "Id": "1",
+    "Name": "NVMe-oF Zone 1",
+    "Description": "Zone to connect NVMe NVMeSubsystemEndpoint and Host",
+    "ExternalAccessibility": "GloballyAccessible",
+    "ZoneType": "ZoneOfEndpoints",
+    "Status": {
+        "State": "Enabled",
+        "Health": "OK"
+    },
+    "Links": {
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/NVMeSubsystemEndpoint1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/Host1"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Zones/Zone1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

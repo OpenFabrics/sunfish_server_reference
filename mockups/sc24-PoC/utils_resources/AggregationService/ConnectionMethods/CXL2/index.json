@@ -1,0 +1,17 @@
+{
+    "@odata.id": "/redfish/v1/AggregationService/ConnectionMethods/CXL2",
+    "@odata.type": "#ConnectionMethod.v1_1_0.ConnectionMethod",
+    "ConnectionMethodType": "Redfish",
+    "ConnectionMethodVariant": "Contoso",
+    "Id": "NVMeoF",
+    "Links": {
+        "AggregationSources": []
+    },
+    "Name": "ConnectionMethod for Agent CXL",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

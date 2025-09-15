@@ -1,0 +1,11 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries",
+    "@odata.type": "#Chassis/CXL-Chassis/LogServices/LocalLog1/EntriesCollection.Chassis/CXL-Chassis/LogServices/LocalLog1/EntriesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Chassis/CXL-Chassis/LogServices/LocalLog1/Entries Collection"
+}

@@ -1,0 +1,32 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3",
+    "@odata.type": "#Chassis.v1_24_0.Chassis",
+    "ChassisType": "Module",
+    "FabricAdapters": {
+        "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters"
+    },
+    "Id": "PooledCXLType3",
+    "Memory": {
+        "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory"
+    },
+    "MemoryDomains": {
+        "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains"
+    },
+    "Name": "Pooled CXL Device Type 3 chassis",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "PCIeDevices": {
+        "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices"
+    },
+    "PowerState": "On",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

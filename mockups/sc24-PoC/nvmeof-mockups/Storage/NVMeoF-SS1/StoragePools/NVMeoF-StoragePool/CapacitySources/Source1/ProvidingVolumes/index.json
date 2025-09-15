@@ -1,0 +1,12 @@
+{
+    "@odata.type": "#VolumeCollection.VolumeCollection",
+    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool/CapacitySources/Source1/ProvidingVolumes",
+    "Name": "Drives",
+    "Members@odata.count": 1,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/Volumes/Namespace1"
+        }
+    ],
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

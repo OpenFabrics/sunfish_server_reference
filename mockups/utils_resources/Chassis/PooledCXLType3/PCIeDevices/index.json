@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices",
+    "@odata.type": "#Chassis/PooledCXLType3/PCIeDevicesCollection.Chassis/PooledCXLType3/PCIeDevicesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Chassis/PooledCXLType3/PCIeDevices Collection"
+}

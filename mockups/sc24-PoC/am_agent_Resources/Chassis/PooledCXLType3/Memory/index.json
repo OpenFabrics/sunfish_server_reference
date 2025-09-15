@@ -1,0 +1,28 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory",
+    "@odata.type": "#MemoryCollection.MemoryCollection",
+    "Description": "Memory Collection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Memory Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

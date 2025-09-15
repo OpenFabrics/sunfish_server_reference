@@ -1,0 +1,17 @@
+{
+    "@odata.id": "/redfish/v1/Systems",
+    "@odata.type": "#SystemsCollection.SystemsCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Systems/CXL-System3"
+        }
+    ],
+    "Members@odata.count": 3,
+    "Name": "Systems Collection"
+}

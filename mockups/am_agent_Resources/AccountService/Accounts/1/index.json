@@ -1,0 +1,31 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/Accounts/1",
+    "@odata.type": "#ManagerAccount.v1_11_0.ManagerAccount",
+    "AccountTypes": [
+        "Redfish"
+    ],
+    "Certificates": {
+        "@odata.id": "/redfish/v1/AccountService/Accounts/1/Certificates"
+    },
+    "Description": "User Account",
+    "Enabled": true,
+    "Id": "1",
+    "Links": {
+        "Role": {
+            "@odata.id": "/redfish/v1/AccountService/Roles/Administrator"
+        }
+    },
+    "Locked": false,
+    "Name": "User Account",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Password": null,
+    "PasswordChangeRequired": false,
+    "RoleId": "Administrator",
+    "UserName": "Administrator"
+}

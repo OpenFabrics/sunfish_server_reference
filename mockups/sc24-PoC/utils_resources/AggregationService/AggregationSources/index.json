@@ -1,0 +1,14 @@
+{
+    "@odata.id": "/redfish/v1/AggregationService/AggregationSources",
+    "@odata.type": "#AggregationService/AggregationSourcesCollection.AggregationService/AggregationSourcesCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AggregationService/AggregationSources/96d7abb4-3473-4b21-88bc-12d121013f32"
+        },
+        {
+            "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+        }
+    ],
+    "Members@odata.count": 2,
+    "Name": "AggregationService/AggregationSources Collection"
+}

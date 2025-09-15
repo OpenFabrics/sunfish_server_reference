@@ -1,0 +1,20 @@
+{
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters",
+    "@odata.type": "#Chassis/PooledCXLType3/FabricAdaptersCollection.Chassis/PooledCXLType3/FabricAdaptersCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/1"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/2"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/3"
+        },
+        {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/4"
+        }
+    ],
+    "Members@odata.count": 4,
+    "Name": "Chassis/PooledCXLType3/FabricAdapters Collection"
+}

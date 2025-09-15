@@ -1,0 +1,35 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Systems/CXL-System2",
+    "@odata.type": "#ComputerSystem.v1_21_0.ComputerSystem",
+    "Description": "CXL System supporting remote CXL devices",
+    "Id": "CXL-System2",
+    "Links": {
+        "Chassis": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/CXL-Chassis"
+            }
+        ]
+    },
+    "Name": "CXL System2",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "PowerState": "On",
+    "ProcessorSummary": {
+        "Count": 1
+    },
+    "Processors": {
+        "@odata.id": "/redfish/v1/Systems/CXL-System2/Processors"
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "SystemType": "Physical",
+    "UUID": "94f6b7cf-4754-469e-b697-a75fcf83cf8f"
+}

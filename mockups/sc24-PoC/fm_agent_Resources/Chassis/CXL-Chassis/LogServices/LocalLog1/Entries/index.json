@@ -1,0 +1,41 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries",
+    "@odata.type": "#LogEntryCollection.LogEntryCollection",
+    "Description": "Collection of Logs for this CXL Module",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/LogServices/LocalLog1/Entries/1",
+            "@odata.type": "#LogEntry.v1_15_1.LogEntry",
+            "Created": "2012-03-07T14:44",
+            "EntryType": "Event",
+            "FirstOverflowTimestamp": "2022-06-13T04:14:33+06:00",
+            "Id": "1",
+            "LastOverflowTimestamp": "2022-06-15T04:24:33+06:00",
+            "Links": {
+                "OriginOfCondition": {
+                    "@odata.id": "/redfish/v1/Chassis/CXL-Chassis/Thermal"
+                }
+            },
+            "Message": "",
+            "MessageArgs": [
+                "ArrayOfMessageArgs"
+            ],
+            "MessageId": "Event.1.0.TempAssert",
+            "Name": "Log Entry 1",
+            "Originator": "Thermal Control",
+            "OriginatorType": "Internal",
+            "OverflowErrorCount": 10,
+            "SensorNumber": 1,
+            "Severity": "Critical"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Log Service Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

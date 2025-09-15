@@ -1,0 +1,34 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Systems/CXL-System3/Processors/CPU",
+    "@odata.type": "#Processor.v1_18_0.Processor",
+    "Description": "CPU with CXL ports",
+    "Id": "CPU",
+    "InstructionSet": "x86-64",
+    "Links": {
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints/I3"
+            }
+        ]
+    },
+    "Manufacturer": "Intel(R) Corporation",
+    "Name": "CPU with CXL ports",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Ports": {
+        "@odata.id": "/redfish/v1/Systems/CXL-System3/Processors/CPU/Ports"
+    },
+    "ProcessorArchitecture": "x86",
+    "ProcessorType": "CPU",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "UUID": "dd377c84-6b6e-488d-8532-caab9e93cb79"
+}

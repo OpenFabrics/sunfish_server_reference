@@ -1,8 +1,10 @@
 # Copyright IBM Corp. 2023
+# Copyright Hewlett Packard Enterprise Development LP 2024
 # This software is available to you under a BSD 3-Clause License. 
 # The full license terms are available here: https://github.com/OpenFabrics/sunfish_server_reference/blob/main/LICENSE
 import os
 import traceback
+import pdb
 
 from flask import Flask, request, render_template
 from sunfish.lib.core import Core
@@ -14,17 +16,25 @@ logging.basicConfig(format=FORMAT, level=logging.DEBUG)
 
 logger = logging.getLogger("Server")
 
+FORMAT = "[%(filename)s:%(lineno)s - %(funcName)20s() ] %(message)s"
+logging.basicConfig(format=FORMAT, level=logging.DEBUG)
+
+logger = logging.getLogger("Server")
 conf = {
-    "storage_backend": "FS",
+    "storage_backend" : {
+        "module_name": "storage.my_storage_package.my_storage_backend",
+        "class_name": "StorageBackend"
+        },
 	"redfish_root": "/redfish/v1/",
 	"backend_conf" : {
 		"fs_root": "Resources",
-		"subscribers_root": "EventService/Subscriptions"
+		"fs_private": "Resources/SunfishPrivate",
+		"subscribers_root": "EventService/Subscriptions",
+		"clean_resource_path": "../../Sunfish/server_start_Resources" 
 	},
 	"handlers": {
 		"subscription_handler": "redfish",
 		"event_handler": "redfish"
-
 	}
 }
 
@@ -44,7 +54,6 @@ def get(resource):
 	logger.debug(f"GET on: {request.path}")
 	try:
 		resp = sunfish_core.get_object(request.path)
-
 		return resp, 200
 	except ResourceNotFound as e:
 		return e.message, 404
@@ -52,9 +61,12 @@ def get(resource):
 @app.route('/<path:resource>', methods=["POST"], strict_slashes=False)
 def post(resource):
 	logger.debug("POST")
+	#pdb.set_trace()
 	try :
 		if resource == "EventListener":
 			resp = sunfish_core.handle_event(request.json)
+		elif resource == "ResetResources":
+			resp = sunfish_core.storage_backend.reset_resources(conf['backend_conf']['fs_root'],conf['backend_conf']['clean_resource_path'])
 		else:
 			resp = sunfish_core.create_object(request.path, request.json)
 

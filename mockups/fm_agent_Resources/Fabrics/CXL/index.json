@@ -1,0 +1,26 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/CXL",
+    "@odata.type": "#Fabric.v1_3_0.Fabric",
+    "Description": "CXL Fabric",
+    "Endpoints": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Endpoints"
+    },
+    "FabricType": "CXL",
+    "Id": "CXL",
+    "Name": "CXL Fabric",
+    "UUID": "1af883ee-d4b7-400d-afb2-536d2c2aea31",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "Status": {
+        "Health": "OK",
+        "State": "Enabled"
+    },
+    "Switches": {
+        "@odata.id": "/redfish/v1/Fabrics/CXL/Switches"
+    }
+}

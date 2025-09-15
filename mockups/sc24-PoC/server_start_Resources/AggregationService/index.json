@@ -1,0 +1,16 @@
+{
+  "@odata.context": "/redfish/v1/$metadata#CompositionService.AggregationService",
+  "@odata.type": "#CompositionService.v1_2_2.AggregationService",
+  "@odata.id": "/redfish/v1/AggregationService",
+  "Id": "AggregationService",
+  "Name": "Aggregation Service",
+  "Status": {
+    "State": "Enabled",
+    "Health": "OK"
+  },
+  "ServiceEnabled": true,
+  "AgregationSources": {
+    "@odata.id": "/redfish/v1/AggregationService/AggregationSources"
+  },
+"Oem": {}
+}

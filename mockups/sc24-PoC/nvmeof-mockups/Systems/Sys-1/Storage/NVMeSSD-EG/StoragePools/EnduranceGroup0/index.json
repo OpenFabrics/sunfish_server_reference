@@ -1,0 +1,36 @@
+{
+    "@odata.type": "#StoragePool.v1_9_0.StoragePool",
+    "Id": "0",
+    "Name": "Endurance Group 0",
+    "Description": "Default Endurance Group",
+    "NVMeProperties": {
+        "NVMePoolType": "EnduranceGroup"
+    },
+    "NVMeEnduranceGroupProperties": {},
+    "Capacity": {
+        "Data": {
+            "AllocatedBytes": 10995116277760,
+            "ConsumedBytes": 10995116277760
+        }
+    },
+    "CapacitySources": [
+        {
+            "@odata.type": "#Capacity.v1_2_0.CapacitySource",
+            "Id": "Source1",
+            "Name": "EnduranceGroup0 Providing Pools",
+            "Description": "ProvidingPools Capacity Source for EnduranceGroup0",
+            "ProvidedCapacity": {
+                "Data": {
+                    "ConsumedBytes": 10995116277760,
+                    "AllocatedBytes": 10995116277760
+                }
+            },
+            "ProvidingPools": {
+                "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/StoragePools/EnduranceGroup0/CapacitySources/Source1/ProvidingPools"
+            },
+            "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/StoragePools/EnduranceGroup0/CapacitySources/Source1"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Systems/Sys-1/Storage/NVMeSSD-EG/StoragePools/EnduranceGroup0",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

@@ -1,0 +1,97 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1",
+    "@odata.type": "#MemoryDomain.v1_5_0.MemoryDomain",
+    "AllowsMemoryChunkCreation": true,
+    "Description": "DIMM Memory Domain accessible through CXL fabric",
+    "Id": "1",
+    "InterleavableMemorySets": [
+        {
+            "MemorySet": [
+                {
+                    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/Memory/DRAM1"
+                }
+            ]
+        }
+    ],
+    "Links": {
+        "CXLLogicalDevices": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/3"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/4"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/5"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/6"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/7"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/8"
+            }
+        ],
+        "FabricAdapters": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/FabricAdapters/1"
+            }
+        ],
+        "PCIeFunctions": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/1"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/2"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/3"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/4"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/5"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/6"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/7"
+            },
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/8"
+            }
+        ]
+    },
+    "MemoryChunkIncrementMiB": 64,
+    "MemoryChunks": {
+        "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1/MemoryChunks"
+    },
+    "MemorySizeMiB": 262144,
+    "MinMemoryChunkSizeMiB": 64,
+    "Name": "CXL DIMM Memory Domain",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+            }
+        }
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    }
+}

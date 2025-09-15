@@ -1,0 +1,15 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/SessionService/Sessions/1234567890ABCDEF",
+    "@odata.type": "#Session.v1_7_0.Session",
+    "Description": "Manager User Session",
+    "Id": "1234567890ABCDEF",
+    "Name": "User Session",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "UserName": "Administrator"
+}

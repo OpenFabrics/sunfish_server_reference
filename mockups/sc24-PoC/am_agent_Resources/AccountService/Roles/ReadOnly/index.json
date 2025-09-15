@@ -1,0 +1,20 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/Roles/ReadOnly",
+    "@odata.type": "#Role.v1_3_1.Role",
+    "AssignedPrivileges": [
+        "Login",
+        "ConfigureSelf"
+    ],
+    "Description": "ReadOnly User Role",
+    "Id": "ReadOnly",
+    "IsPredefined": true,
+    "Name": "User Role",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    },
+    "OemPrivileges": []
+}

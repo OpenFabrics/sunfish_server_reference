@@ -1,0 +1,37 @@
+{
+    "@odata.type": "#StoragePool.v1_9_0.StoragePool",
+    "Id": "1",
+    "Name": "NVMe-oFStoragePool1",
+    "Description": "Storage Pool",
+    "NVMeProperties": {
+        "NVMePoolType": "NVMSet"
+    },
+    "Capacity": {
+        "Data": {
+            "AllocatedBytes": 10995116277760,
+            "ConsumedBytes": 5497558138880
+        }
+    },
+    "CapacitySources": [
+        {
+            "@odata.type": "#Capacity.v1_2_0.CapacitySource",
+            "Id": "Source1",
+            "Name": "Source1",
+            "ProvidedCapacity": {
+                "Data": {
+                    "ConsumedBytes": 300067890136,
+                    "AllocatedBytes": 600135780272
+                }
+            },
+            "ProvidingVolumes": {
+                "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool/CapacitySources/Source1/ProvidingVolumes"
+            },
+            "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool/CapacitySources/Source1"
+        }
+    ],
+    "AllocatedVolumes": {
+        "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes"
+    },
+    "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/StoragePools/NVMeoF-StoragePool",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

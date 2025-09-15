@@ -1,0 +1,40 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Fabrics/Sunfish_9d84_CXL/Switches/CXL2",
+    "@odata.type": "#Switch.v1_9_1.Switch",
+    "CXL": {
+        "MaxVCSsSupported": 4,
+        "TotalNumbervPPBs": 4,
+        "VCS": {
+            "HDMDecoders": 12
+        }
+    },
+    "Id": "CXL2",
+    "Links": {
+        "Endpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/Sunfish_9d84_CXL/Endpoints/2"
+            }
+        ]
+    },
+    "Name": "CXL Expansion Switch",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/9d84c743-8e26-45ef-8a7f-a8d07cf8a32c"
+            }
+        }
+    },
+    "Ports": {
+        "@odata.id": "/redfish/v1/Fabrics/Sunfish_9d84_CXL/Switches/CXL2/Ports"
+    },
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Disabled"
+    },
+    "SwitchType": "CXL",
+    "UUID": "ac14c5f1-0fea-42dd-8a19-f681d9799e50"
+}

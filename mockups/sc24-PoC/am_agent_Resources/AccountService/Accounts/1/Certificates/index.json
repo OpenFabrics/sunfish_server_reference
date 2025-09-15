@@ -1,0 +1,17 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@Redfish.SupportedCertificates": [
+        "PEM"
+    ],
+    "@odata.id": "/redfish/v1/AccountService/Accounts/1/Certificates",
+    "@odata.type": "#CertificateCollection.CertificateCollection",
+    "Members": [],
+    "Members@odata.count": 0,
+    "Name": "Certificate Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

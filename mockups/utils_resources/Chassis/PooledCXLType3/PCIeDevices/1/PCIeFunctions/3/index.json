@@ -1,0 +1,45 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/PCIeFunctions/3",
+    "@odata.type": "#PCIeFunction.v1_5_0.PCIeFunction",
+    "ClassCode": "0x050210",
+    "Description": "PCIe Function with CXL extensions representing Memory Controller",
+    "DeviceClass": "MemoryController",
+    "DeviceId": "0xABCD",
+    "FunctionId": 3,
+    "FunctionProtocol": "CXL",
+    "FunctionType": "Physical",
+    "Id": "3",
+    "Links": {
+        "CXLLogicalDevice": {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1/CXLLogicalDevices/3"
+        },
+        "MemoryDomains": [
+            {
+                "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/MemoryDomains/1"
+            }
+        ],
+        "PCIeDevice": {
+            "@odata.id": "/redfish/v1/Chassis/PooledCXLType3/PCIeDevices/1"
+        }
+    },
+    "Name": "CXL Function",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned",
+            "ManagingAgent": {
+                "@odata.id": "/redfish/v1/AggregationService/AggregationSources/bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2"
+            }
+        }
+    },
+    "RevisionId": "0x00",
+    "Status": {
+        "Health": "OK",
+        "HealthRollup": "OK",
+        "State": "Enabled"
+    },
+    "SubsystemId": "0xABCD",
+    "SubsystemVendorId": "0xABCD",
+    "VendorId": "0xABCD"
+}

@@ -1,0 +1,102 @@
+{
+    "Agents_xref_URIs": {
+        "96d7abb4-3473-4b21-88bc-12d121013f32": {
+            "aliases": {},
+            "boundaryPorts": {
+                "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL2/Ports/F1",
+                    "LocalLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "LocalPortId": "5",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F1",
+                    "RemoteLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "RemotePortId": "1"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL2/Ports/F2",
+                    "AgentPeerSwitchURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL2",
+                    "LocalLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "LocalPortId": "6",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F2",
+                    "RemoteLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "RemotePortId": "2"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F3": {
+                    "LocalLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "LocalPortId": "7"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL2/Ports/F4",
+                    "AgentPeerSwitchURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL2",
+                    "LocalLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "LocalPortId": "8",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F4",
+                    "RemoteLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "RemotePortId": "4"
+                }
+            }
+        },
+        "bcaeeecd-a475-4b0b-8eb5-6cb0238d30d2": {
+            "aliases": {
+                "/redfish/v1/Fabrics/CXL/Endpoints/T5": "/redfish/v1/Fabrics/CXL/Endpoints/Sunfish_bcae_T5"
+            },
+            "boundaryPorts": {
+                "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F1": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1/Ports/F1",
+                    "AgentPeerSwitchURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1",
+                    "LocalLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "LocalPortId": "1",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F1",
+                    "RemoteLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "RemotePortId": "5"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F2": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1/Ports/F2",
+                    "AgentPeerSwitchURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1",
+                    "LocalLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "LocalPortId": "2",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F2",
+                    "RemoteLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "RemotePortId": "6"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F3": {
+                    "LocalLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "LocalPortId": "3"
+                },
+                "/redfish/v1/Fabrics/CXL/Switches/CXL2/Ports/F4": {
+                    "AgentPeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1/Ports/F4",
+                    "AgentPeerSwitchURI": "/redfish/v1/Fabrics/CXL/Switches/DummyCXL1",
+                    "LocalLinkPartnerId": "ac14c5f1-0fea-42dd-8a19-f681d9799e50",
+                    "LocalPortId": "4",
+                    "PeerPortURI": "/redfish/v1/Fabrics/CXL/Switches/CXL1/Ports/F4",
+                    "RemoteLinkPartnerId": "bfd8ca1e-b5b5-4c0f-a3cf-4d741b85b1fb",
+                    "RemotePortId": "8"
+                }
+            }
+        },
+        "exampleAgentContex": {
+            "aliases": {
+                "/another/Agent/URI": "/anotherRenamed/Sunfish/URI",
+                "/example/Agent/URI": "/exampleRenamed/Sunfish/URI"
+            },
+            "foreignBoundaryComponents": {
+                "/another/Agent/boundary/URI": "/anotherRenamed/Sunfish/boundary/URI",
+                "/example/Agent/boundary/URI": "/exampleRenamed/Sunfish/boundary/URI"
+            }
+        }
+    },
+    "Sunfish_xref_URIs": {
+        "aliases": {
+            "/another/Sunfish/URI": [
+                "/different/Agent1/URI"
+            ],
+            "/example/Sunfish/URI": [
+                "/example/Agent1/URI",
+                "/example/Agent2/URI"
+            ],
+            "/redfish/v1/Fabrics/CXL/Endpoints/Sunfish_bcae_T5": [
+                "/redfish/v1/Fabrics/CXL/Endpoints/T5"
+            ]
+        },
+        "missing": []
+    }
+}

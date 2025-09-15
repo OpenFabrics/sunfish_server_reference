@@ -1,0 +1,18 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/SessionService/Sessions",
+    "@odata.type": "#SessionCollection.SessionCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/SessionService/Sessions/1234567890ABCDEF"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Session Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

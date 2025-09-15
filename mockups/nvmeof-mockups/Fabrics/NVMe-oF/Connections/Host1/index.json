@@ -1,0 +1,26 @@
+{
+    "@odata.type": "#Connection.v1_0_0.Connection",
+    "Id": "Host1",
+    "Name": "Connection info for host 1",
+    "ConnectionType": "Storage",
+    "VolumeInfo": [
+        {
+            "AccessCapabilities": [
+                "Read",
+                "Write"
+            ],
+            "Volume": {
+                "@odata.id": "/redfish/v1/Storage/NVMeoF-SS1/Volumes/LogicalNS1"
+            }
+        }
+    ],
+    "Links": {
+        "InitiatorEndpoints": [
+            {
+                "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Endpoints/Host"
+            }
+        ]
+    },
+    "@odata.id": "/redfish/v1/Fabrics/NVMe-oF/Connections/Host1",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}

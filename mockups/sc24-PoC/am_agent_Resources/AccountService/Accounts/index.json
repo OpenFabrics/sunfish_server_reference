@@ -1,0 +1,18 @@
+{
+    "@Redfish.Copyright": "\u00a9 Copyright 2023 Hewlett Packard Enterprise Development LP",
+    "@odata.id": "/redfish/v1/AccountService/Accounts",
+    "@odata.type": "#ManagerAccountCollection.ManagerAccountCollection",
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/AccountService/Accounts/1"
+        }
+    ],
+    "Members@odata.count": 1,
+    "Name": "Accounts Collection",
+    "Oem": {
+        "Sunfish_RM": {
+            "@odata.type": "#SunfishExtensions.v1_0_0.ResourceExtensions",
+            "BoundaryComponent": "owned"
+        }
+    }
+}

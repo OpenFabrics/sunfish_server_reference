@@ -1,0 +1,12 @@
+{
+    "@odata.type": "#PortCollection.PortCollection",
+    "Name": "Port Collection",
+    "Members@odata.count": 1,
+    "Members": [
+        {
+            "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/Ports/1"
+        }
+    ],
+    "@odata.id": "/redfish/v1/Chassis/Sys-1Chassis/NetworkAdapters/1/Ports",
+    "@Redfish.Copyright": "Copyright 2015-2024 SNIA. All rights reserved."
+}
