@@ -29,24 +29,27 @@
 
 # exit on error
 set -e 
+# assume the scripts are invoked from BASE_DIR/sunfish_server/scripts directory
+SCRIPT_DIR=$(pwd)
+parent="${SCRIPT_DIR%/*}"
+WORK_DIR="${parent%/*}"
 
-BASE_DIR=$(pwd)
-WORK_DIR=$BASE_DIR/test_SC24
 
 
 print_help() {
     cat <<EOF
 
 Helper to relink a Sunfish + 2 Agents emulator to a new Sunfish Core Library build. 
-    'Appliance manager' agent built from the sunfish_reference_server and linked to the Sunfish Core Lib
+    ../../sunfish_lib:      contains the Core library repo
+    ../../sunfish_server:   contains the sunfish server API service (aka Sunfish Core Service)
+    ../../agent_1:          if it exists, contains the 1st agent API application (ex. fabric manager)
+    ../../agent_2:          if it exists, contains the 2nd agent API application (ex. appliance manager)
 
 USAGE:
 
-    $(basename $0) [--port PORT] [--workspace DIR] 
+    $(basename $0) [--workspace DIR] 
 
 Options:
-
-    -p | --port PORT     -- Port to run the emulator on. Default is $API_PORT.
 
     -w | --workspace DIR -- Directory to set up the emulator. Defaults to
                             '$WORK_DIR'.
@@ -58,10 +61,6 @@ EOF
 # Extract command line args
 while [ "$1" != "" ]; do
     case $1 in
-        -p | --port )
-            shift
-            API_PORT=$1
-            ;;
         -w | --workspace )
             shift
             WORK_DIR=$1
@@ -78,30 +77,36 @@ done
 
 
 
-# Get and build Sunfish library core
-cd $WORK_DIR/sc24_sunfish_lib
+# go to sunfish_lib directory and re-make Sunfish library core
+echo "re-make Sunfish Core Library"
+cd $WORK_DIR/sunfish_lib
+echo $(pwd)
 . venv/bin/activate
 make build
 deactivate
 
-# Get the Sunfish Server and build it
-cd $WORK_DIR/sc24_sunfish_server
+# relink the sunfish_server
+echo "re-link Sunfish Server"
+cd $WORK_DIR/sunfish_server
+echo $(pwd)
 . venv/bin/activate
-pip3 install --force-reinstall ../sc24_sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
+pip3 install --force-reinstall ../sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
 deactivate
 
-# Get the fabric manager server and build it
-cd $WORK_DIR/sc24_fabric_manager
-# First get the sunfish_server
+# relink the fabric manager server (agent_1)
+echo "re-link agent_1 Server"
+cd $WORK_DIR/agent_1
 . venv/bin/activate
-# install the library core into the fabric manager server
-pip3 install --force-reinstall ../sc24_sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
+echo $(pwd)
+pip3 install --force-reinstall ../sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
 deactivate
 
-# Get the appliance manager server and build it
-cd $WORK_DIR/sc24_appliance_manager
+# relink the appliance manager server (agent_2)
+echo "re-link agent_2 Server"
+cd $WORK_DIR/agent_2
+echo $(pwd)
 . venv/bin/activate
-pip3 install --force-reinstall ../sc24_sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
+pip3 install --force-reinstall ../sunfish_lib/dist/sunfish-0.1.0-py3-none-any.whl
 deactivate
 cd $WORK_DIR
 
@@ -110,7 +115,7 @@ echo ""
 echo "fire up the Sunfish API server"
 echo "and two instances of Agents"
 echo ""
-echo "Then 'cd $WORK_DIR/sc24_appliance_manager/templates' and"
+echo "Then 'cd $SCRIPT_DIR' and"
 echo "use the shell scripts found there to reset the demo"
 
 exit 0
