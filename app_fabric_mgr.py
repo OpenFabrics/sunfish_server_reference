@@ -196,7 +196,7 @@ def post(resource):
 		elif resource =="AgentUpload":
 			resp = upload_agent()
 		elif resource =="UpdateObject":    #for temp use to inject ResourceChanged events from Agent API
-			resp = update_obj()
+			resp = update_object()
 		elif resource == "ResetResources":
 			resp = sunfish_core.storage_backend.reset_resources(conf['backend_conf']['fs_root'],conf['backend_conf']['clean_resource_path'])
 		else:
