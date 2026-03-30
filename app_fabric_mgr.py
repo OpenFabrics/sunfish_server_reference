@@ -74,6 +74,24 @@ upload_event = {
     } ]
 }
 
+# for temp use to inject this event from Agent API
+# to the Sunfish Service
+update_event = {
+    "@odata.type": "#Event.v1_7_0.Event",
+    "Name": "Resource Changed",
+    "Context": "None",
+    "Events": [ {
+        "Severity": "Ok",
+        "Message": "Resource Changed",
+        "MessageId": "ResourceEvent.1.x.ResourceChanged",
+        "MessageArgs": [ ],
+        "OriginOfCondition": {
+            "@odata.id": "/redfish/v1/Fabrics/CXL"
+        }
+    } ]
+}
+
+
 # initialize flask
 
 template_dir = os.path.abspath('./templates_web')
@@ -127,6 +145,33 @@ def upload_agent():
             logger.error(e)
             raise e
 
+# a temp event to inject a ResourceChanged event from
+# the Agent server to the Sunfish Service
+def update_object():
+
+        logger.debug(f"Sending update_obj Event to {eventURI}")
+        logger.debug(f"data \n{update_event}")
+        try:
+            subscriber = sunfish_core.get_object(sunfishSubscriber)
+            update_event["Context"] = subscriber["Context"]
+            logger.debug(f"event to send \n{update_event}")
+            r = requests.post(eventURI, headers=sunfish_request_headers, data=json.dumps(update_event))
+            if r.status_code == 200:
+                logger.debug(f"update request was successful. status code: {r.status_code}, reason {r.reason}")
+                logger.debug(f"Response payload:\n {json.dumps(r.json(), indent=2)}")
+                return [r.status_code,r.reason,r.json()]
+            else:
+                logger.debug(f"update request was unsuccessful. status code: {r.status_code}, reason {r.reason}")
+                if r.status_code == 409:
+                    resp_str="Resource to be uploaded was a duplicate"
+                pass
+                return [r.status_code,r.reason, resp_str]
+        except requests.exceptions.RequestException as e:
+            logger.error("RequestException")
+            logger.error(e)
+            raise e
+
+
 # Usa codici http
 @app.route('/<path:resource>', methods=["GET"], strict_slashes=False)
 def get(resource):
@@ -150,6 +195,8 @@ def post(resource):
 			resp = reg_agent() 
 		elif resource =="AgentUpload":
 			resp = upload_agent()
+		elif resource =="UpdateObject":    #for temp use to inject ResourceChanged events from Agent API
+			resp = update_object()
 		elif resource == "ResetResources":
 			resp = sunfish_core.storage_backend.reset_resources(conf['backend_conf']['fs_root'],conf['backend_conf']['clean_resource_path'])
 		else:
